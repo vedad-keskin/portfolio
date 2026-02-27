@@ -1,59 +1,69 @@
-# Portfolio
+# 🎮 Vedad Keskin — Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+A pixel-art styled, mobile-first portfolio showcasing my web, mobile, and desktop projects. Built with **Angular 21** and designed with a retro aesthetic using **Press Start 2P** and **VT323** fonts on a dark navy palette.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Features
+
+- **🌟 Animated Starfield** — Canvas-based twinkling star background with subtle glow effects
+- **⚡ Backend Wake Service** — One-click ping to wake free-tier Render backends with live animated status indicators (sleeping → waking → online)
+- **🌐 Project Showcase** — Interactive cards with logos, tech tags, descriptions, and hover effects
+- **🔄 EN / BS Translations** — Full bilingual support (English & Bosnian) with a pixel-art flag toggle switch, persisted via localStorage
+- **📱 Mobile-First Design** — Fully responsive layout optimized for screens as small as 400px, with hamburger navigation
+- **🎯 Tech Stack Display** — Auto-generated tag cloud in the hero section showing all unique technologies used across projects
+
+---
+
+## 🗂️ Project Structure
+
+```
+src/app/
+├── core/
+│   ├── models/          → Project interface
+│   ├── data/            → Project metadata (titles, URLs, tags, backend URLs)
+│   └── services/        → BackendWakeService (signal-based reactive status)
+├── shared/
+│   ├── language/        → LanguageService + EN/BS translations
+│   └── components/
+│       ├── nav/         → Sticky glassmorphic navbar + hamburger menu
+│       ├── section-header/ → Reusable pixel-styled section titles
+│       ├── lang-switch/ → Flag toggle for language switching
+│       └── starfield/   → Canvas star animation background
+└── features/
+    ├── web-projects/    → Responsive project card grid
+    └── backend-wake/    → Wake panel with animated status indicators
+```
+
+
+## 🚀 Getting Started
 
 ```bash
+# Install dependencies
+npm install
+
+# Start dev server
 ng serve
+
+# Open in browser
+http://localhost:4200
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+| Layer | Technology |
+|-------|------------|
+| Framework | Angular 21 |
+| Language | TypeScript |
+| Styling | Vanilla CSS (CSS Variables, mobile-first) |
+| Fonts | Press Start 2P, VT323 (Google Fonts) |
+| Hosting | Vercel (frontend), Render (backends) |
+| Database | PostgreSQL via Supabase |
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📄 License
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+© 2025 Vedad Keskin. All rights reserved.
