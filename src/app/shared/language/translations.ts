@@ -71,7 +71,7 @@ export const BS: Record<TranslationKey, string> = {
     nav_desktop: '🖥️ DESKTOP',
     nav_soon: 'USKORO',
 
-    hero_greeting: 'Ja sam',
+    hero_greeting: 'Hej, ja sam',
     hero_tagline: 'Full-Stack Developer koji gradi web, mobilna i desktop iskustva.',
     hero_cta: 'POGLEDAJ PROJEKTE',
     hero_counter: 'PROJEKATA',
