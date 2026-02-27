@@ -5,6 +5,7 @@ import { SectionHeaderComponent } from './shared/components/section-header/secti
 import { WebProjectsComponent } from './features/web-projects/web-projects';
 import { BackendWakeComponent } from './features/backend-wake/backend-wake';
 import { LanguageService } from './shared/language/language.service';
+import { WEB_PROJECTS } from './core/data/projects.data';
 
 @Component({
   selector: 'app-root',
@@ -21,4 +22,5 @@ import { LanguageService } from './shared/language/language.service';
 })
 export class App {
   readonly ls = inject(LanguageService);
+  readonly techStack = [...new Set(WEB_PROJECTS.flatMap(p => p.tags))];
 }

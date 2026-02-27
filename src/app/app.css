@@ -52,6 +52,37 @@
     letter-spacing: 1px;
 }
 
+/* ── Tech Stack Tags ── */
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-tag {
+    font-family: var(--font-pixel);
+    font-size: 7px;
+    color: var(--text-dim);
+    border: 1px solid var(--frame);
+    padding: 6px 12px;
+    letter-spacing: 1px;
+    transition: all 0.25s var(--ease);
+    background: rgba(27, 38, 59, 0.3);
+}
+
+.tech-tag:hover {
+    color: var(--accent);
+    border-color: var(--accent-dim);
+    background: rgba(0, 229, 255, 0.08);
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+}
+
 .hero-cta {
     display: flex;
     justify-content: center;
