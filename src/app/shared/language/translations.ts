@@ -4,6 +4,8 @@ export type TranslationKey =
     | 'nav_services' | 'nav_web' | 'nav_mobile' | 'nav_desktop' | 'nav_soon'
     // Hero
     | 'hero_greeting' | 'hero_tagline' | 'hero_cta'
+    // Project cards
+    | 'visit_btn'
     // Section headers
     | 'section_services_title' | 'section_services_subtitle'
     | 'section_web_title' | 'section_web_subtitle'
@@ -30,6 +32,8 @@ export const EN: Record<TranslationKey, string> = {
     hero_greeting: "Hi, I'm",
     hero_tagline: 'Full-Stack Developer building web, mobile & desktop experiences.',
     hero_cta: 'VIEW PROJECTS',
+
+    visit_btn: 'VISIT',
 
     section_services_title: 'BACKEND SERVICES',
     section_services_subtitle: 'Wake up the free-tier Render backends before exploring the projects.',
@@ -69,6 +73,8 @@ export const BS: Record<TranslationKey, string> = {
     hero_greeting: 'Ja sam',
     hero_tagline: 'Full-Stack Developer koji gradi web, mobilna i desktop iskustva.',
     hero_cta: 'POGLEDAJ PROJEKTE',
+
+    visit_btn: 'POSJETI',
 
     section_services_title: 'BACKEND SERVISI',
     section_services_subtitle: 'Probudite besplatne Render backend servise prije istraživanja projekata.',

@@ -40,20 +40,13 @@
     user-select: none;
 }
 
-.logo-frame {
-    background: rgba(0, 0, 0, 0.65);
-    padding: 3px;
-    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.35);
+.brand-pixel {
+    font-family: var(--font-pixel);
+    font-size: 16px;
+    color: var(--accent);
+    text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+    letter-spacing: 3px;
 }
-
-.brand-logo {
-    display: block;
-    border: 2px solid var(--frame-light);
-    padding: 2px;
-    background: var(--bg-deep);
-    image-rendering: pixelated;
-}
-
 
 
 .brand-sub {
@@ -170,13 +163,8 @@
         padding: 0 16px;
     }
 
-    .logo-frame {
-        padding: 2px;
-    }
-
-    .brand-logo {
-        width: 28px;
-        height: 28px;
+    .brand-pixel {
+        font-size: 14px;
     }
 
     .brand-sub {
@@ -238,9 +226,8 @@
         padding: 0 12px;
     }
 
-    .brand-logo {
-        width: 24px;
-        height: 24px;
+    .brand-pixel {
+        font-size: 12px;
     }
 
     .nav-links a {
