@@ -3,7 +3,7 @@ export type TranslationKey =
     // Nav
     | 'nav_services' | 'nav_web' | 'nav_mobile' | 'nav_desktop' | 'nav_soon'
     // Hero
-    | 'hero_greeting' | 'hero_tagline' | 'hero_cta'
+    | 'hero_greeting' | 'hero_tagline' | 'hero_cta' | 'hero_counter'
     // Project cards
     | 'visit_btn'
     // Section headers
@@ -32,6 +32,7 @@ export const EN: Record<TranslationKey, string> = {
     hero_greeting: "Hi, I'm",
     hero_tagline: 'Full-Stack Developer building web, mobile & desktop experiences.',
     hero_cta: 'VIEW PROJECTS',
+    hero_counter: 'PROJECTS',
 
     visit_btn: 'VISIT',
 
@@ -73,6 +74,7 @@ export const BS: Record<TranslationKey, string> = {
     hero_greeting: 'Ja sam',
     hero_tagline: 'Full-Stack Developer koji gradi web, mobilna i desktop iskustva.',
     hero_cta: 'POGLEDAJ PROJEKTE',
+    hero_counter: 'PROJEKATA',
 
     visit_btn: 'POSJETI',
 

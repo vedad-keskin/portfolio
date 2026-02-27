@@ -57,6 +57,54 @@
     justify-content: center;
 }
 
+/* ── Project Counter ── */
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 16px 28px;
+    border: 2px solid var(--frame);
+    background: rgba(27, 38, 59, 0.35);
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.5;
+}
+
+.stat-number {
+    font-family: var(--font-pixel);
+    font-size: 28px;
+    color: var(--accent);
+    text-shadow: 0 0 16px rgba(0, 229, 255, 0.4);
+    letter-spacing: 2px;
+}
+
+.stat-label {
+    font-family: var(--font-pixel);
+    font-size: 6px;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
 .cta-btn {
     font-family: var(--font-pixel);
     font-size: 9px;
