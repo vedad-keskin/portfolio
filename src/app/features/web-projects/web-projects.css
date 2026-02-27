@@ -183,7 +183,7 @@
 
 /* ===== Small Mobile ===== */
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
     .project-card {
         flex-direction: row;
         align-items: stretch;
