@@ -1,0 +1,43 @@
+<nav class="navbar" [class.scrolled]="scrolled()">
+    <div class="nav-inner">
+        <!-- Brand -->
+        <a class="nav-brand" (click)="scrollTo('hero')">
+            <span class="brand-pixel">VK</span>
+            <span class="brand-sub">PORTFOLIO</span>
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" [class.active]="menuOpen()" (click)="toggleMenu()" aria-label="Toggle navigation"
+            id="nav-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Nav Links -->
+        <ul class="nav-links" [class.open]="menuOpen()">
+            <li>
+                <a (click)="scrollTo('wake-services')" id="nav-wake">
+                    ⚡ SERVICES
+                </a>
+            </li>
+            <li>
+                <a (click)="scrollTo('web-projects')" id="nav-web">
+                    🌐 WEB APPS
+                </a>
+            </li>
+            <li>
+                <a class="disabled" id="nav-mobile">
+                    📱 MOBILE
+                    <span class="coming-soon">SOON</span>
+                </a>
+            </li>
+            <li>
+                <a class="disabled" id="nav-desktop">
+                    🖥️ DESKTOP
+                    <span class="coming-soon">SOON</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

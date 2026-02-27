@@ -1,0 +1,29 @@
+<div class="projects-grid">
+    @for (project of projects; track project.id) {
+    <a class="project-card" [href]="project.url" target="_blank" rel="noopener noreferrer"
+        [id]="'project-' + project.id">
+
+        <!-- Logo -->
+        <div class="card-logo-wrap">
+            <img [src]="project.logoPath" [alt]="project.name + ' logo'" class="card-logo" loading="lazy" />
+        </div>
+
+        <!-- Info -->
+        <div class="card-body">
+            <h3 class="card-title">{{ project.name }}</h3>
+            <p class="card-desc">{{ project.description }}</p>
+            <div class="card-tags">
+                @for (tag of project.tags; track tag) {
+                <span class="tag">{{ tag }}</span>
+                }
+            </div>
+        </div>
+
+        <!-- Visit indicator -->
+        <div class="card-visit">
+            <span class="visit-text">VISIT</span>
+            <span class="visit-arrow">→</span>
+        </div>
+    </a>
+    }
+</div>

@@ -1,0 +1,91 @@
+<div class="wake-panel">
+    <!-- Header + Button -->
+    <div class="wake-header">
+        <button class="wake-btn" [class.waking]="wake.anyWaking()" [class.done]="wake.allAwake()"
+            (click)="wake.wakeAll()" [disabled]="wake.allAwake()" id="wake-all-btn">
+            @if (wake.allAwake()) {
+            <span class="btn-icon">✅</span>
+            <span class="btn-label">ALL SYSTEMS ONLINE</span>
+            } @else if (wake.anyWaking()) {
+            <span class="btn-icon spinner">⚡</span>
+            <span class="btn-label">WAKING UP...</span>
+            } @else {
+            <span class="btn-icon">⚡</span>
+            <span class="btn-label">WAKE ALL SERVICES</span>
+            }
+        </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-track">
+        <div class="progress-fill" [style.width.%]="wake.progress()" [class.complete]="wake.allAwake()">
+        </div>
+        <span class="progress-label">{{ wake.progress() }}%</span>
+    </div>
+
+    <!-- Service List -->
+    <div class="service-list">
+        @for (backend of wake.backends(); track backend.url; let i = $index) {
+        <div class="service-row" [class]="'service-row status-' + backend.status" (click)="wake.wakeOne(i)">
+
+            <!-- Status Indicator -->
+            <div class="status-dot-wrap">
+                @switch (backend.status) {
+                @case ('sleeping') {
+                <div class="status-dot sleeping">
+                    <span class="zzz">Z</span>
+                </div>
+                }
+                @case ('waking') {
+                <div class="status-dot waking">
+                    <div class="pulse-ring"></div>
+                </div>
+                }
+                @case ('awake') {
+                <div class="status-dot awake">
+                    <span class="check">✓</span>
+                </div>
+                }
+                @case ('error') {
+                <div class="status-dot error">
+                    <span class="x-mark">✕</span>
+                </div>
+                }
+                }
+            </div>
+
+            <!-- Service Info -->
+            <div class="service-info">
+                <span class="service-name">{{ backend.name }}</span>
+                <span class="service-status-label">
+                    @switch (backend.status) {
+                    @case ('sleeping') { SLEEPING }
+                    @case ('waking') { WAKING UP... }
+                    @case ('awake') { ONLINE }
+                    @case ('error') { ERROR }
+                    }
+                </span>
+            </div>
+
+            <!-- Ping Button -->
+            <button class="ping-btn" [disabled]="backend.status === 'awake' || backend.status === 'waking'"
+                (click)="$event.stopPropagation(); wake.wakeOne(i)">
+                @if (backend.status === 'awake') {
+                🟢
+                } @else if (backend.status === 'waking') {
+                ⏳
+                } @else {
+                PING
+                }
+            </button>
+        </div>
+        }
+    </div>
+
+    <!-- Reset -->
+    @if (wake.allAwake()) {
+    <button class="reset-btn" (click)="wake.resetAll()" id="wake-reset-btn">
+        ↺ RESET
+    </button>
+    }
+</div>

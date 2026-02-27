@@ -1,12 +1,21 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { NavComponent } from './shared/components/nav/nav';
+import { StarfieldComponent } from './shared/components/starfield/starfield';
+import { SectionHeaderComponent } from './shared/components/section-header/section-header';
+import { WebProjectsComponent } from './features/web-projects/web-projects';
+import { BackendWakeComponent } from './features/backend-wake/backend-wake';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    NavComponent,
+    StarfieldComponent,
+    SectionHeaderComponent,
+    WebProjectsComponent,
+    BackendWakeComponent,
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('portfolio');
-}
+export class App { }

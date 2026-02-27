@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===== Portfolio — Global Styles ===== */
+
+:root {
+  /* Dark palette (Nightfall-inspired) */
+  --bg-deep:       #0D1B2A;
+  --bg-mid:        #1B263B;
+  --bg-card:       #1B263B;
+  --frame:         #415A77;
+  --frame-light:   #778DA9;
+  --text:          #E0E1DD;
+  --text-dim:      #a0a4a8;
+  --accent:        #00E5FF;
+  --accent-dim:    #0097A7;
+  --accent-green:  #00E676;
+  --accent-amber:  #FFD740;
+  --accent-red:    #FF1744;
+  --black:         #000000;
+
+  /* Fonts */
+  --font-pixel:  'Press Start 2P', monospace;
+  --font-body:   'VT323', monospace;
+
+  /* Spacing */
+  --nav-height: 60px;
+  --section-gap: 48px;
+  --content-max: 1100px;
+
+  /* Transitions */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 20px;
+  background: var(--bg-deep);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Pixel-art scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+  border-left: 2px solid var(--frame);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--frame-light);
+  border: 2px solid var(--frame);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-dim);
+}
+
+/* Utility */
+.pixel-border {
+  border: 3px solid var(--frame);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+}

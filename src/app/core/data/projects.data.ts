@@ -1,0 +1,53 @@
+import { Project } from '../models/project.model';
+
+export const WEB_PROJECTS: Project[] = [
+    {
+        id: 'nightfall',
+        name: 'Nightfall Guide',
+        description: 'A companion web rulebook for the Nightfall mobile game — explaining roles, rules, and gameplay mechanics.',
+        logoPath: 'assets/nightfall.png',
+        url: 'https://nightfall-project.vercel.app',
+        tags: ['Angular', 'Rulebook', 'Game'],
+        category: 'web',
+    },
+    {
+        id: 'kino-zona',
+        name: 'Kino Zona',
+        description: 'A cinema management platform for browsing movies, reserving tickets, and managing screenings.',
+        logoPath: 'assets/kino-zona.png',
+        url: 'https://kino-zona.vercel.app',
+        tags: ['Angular', '.NET', 'PostgreSQL', 'Vercel', 'Render', 'Supabase'],
+        category: 'web',
+        backendUrl: 'https://kino-zona.onrender.com',
+    },
+    {
+        id: 'majstor-ba',
+        name: 'Majstor BA',
+        description: 'A platform connecting local craftsmen and service providers with customers across Bosnia.',
+        logoPath: 'assets/majstor-ba.png',
+        url: 'https://majstor-ba.vercel.app',
+        tags: ['Angular', '.NET', 'PostgreSQL', 'Vercel', 'Render', 'Supabase'],
+        category: 'web',
+        backendUrl: 'https://majstor-ba.onrender.com',
+    },
+    {
+        id: 'festify',
+        name: 'Festify',
+        description: 'A music festival discovery and ticket booking app — find events, explore lineups, and grab tickets.',
+        logoPath: 'assets/festify.png',
+        url: 'https://festify-project.vercel.app',
+        tags: ['Angular', '.NET', 'PostgreSQL', 'Vercel', 'Render', 'Supabase', 'Leaflet'],
+        category: 'web',
+        backendUrl: 'https://festify-3tgn.onrender.com',
+    },
+    {
+        id: 'bookhana',
+        name: 'Bookhana',
+        description: 'An online bookstore for browsing, reviewing, and purchasing books with user accounts and wishlists.',
+        logoPath: 'assets/bookhana.png',
+        url: 'https://bookhana.vercel.app',
+        tags: ['Angular', '.NET', 'PostgreSQL', 'Vercel', 'Render', 'Supabase'],
+        category: 'web',
+        backendUrl: 'https://bookhana.onrender.com',
+    },
+];
