@@ -5,11 +5,11 @@
   <!-- Hero -->
   <section class="hero" id="hero">
     <div class="hero-inner">
-      <p class="hero-greeting">Hi, I'm</p>
+      <p class="hero-greeting">{{ ls.t('hero_greeting') }}</p>
       <h1 class="hero-name">Vedad Keskin</h1>
-      <p class="hero-tagline">Full-Stack Developer building web, mobile & desktop experiences.</p>
+      <p class="hero-tagline">{{ ls.t('hero_tagline') }}</p>
       <div class="hero-cta">
-        <a class="cta-btn" href="#web-projects">VIEW PROJECTS</a>
+        <a class="cta-btn" href="#web-projects">{{ ls.t('hero_cta') }}</a>
       </div>
     </div>
   </section>
@@ -17,8 +17,7 @@
   <!-- Backend Wake -->
   <section class="section" id="wake-services">
     <div class="section-inner">
-      <app-section-header title="BACKEND SERVICES"
-        subtitle="Wake up the free-tier Render backends before exploring the projects." />
+      <app-section-header [title]="ls.t('section_services_title')" [subtitle]="ls.t('section_services_subtitle')" />
       <app-backend-wake />
     </div>
   </section>
@@ -26,7 +25,7 @@
   <!-- Web Projects -->
   <section class="section" id="web-projects">
     <div class="section-inner">
-      <app-section-header title="WEB APPS" subtitle="Full-stack web applications built with Angular & .NET" />
+      <app-section-header [title]="ls.t('section_web_title')" [subtitle]="ls.t('section_web_subtitle')" />
       <app-web-projects />
     </div>
   </section>
@@ -36,21 +35,19 @@
     <div class="section-inner coming-soon-wrap">
       <div class="coming-soon-box">
         <span class="cs-icon">📱</span>
-        <span class="cs-label">MOBILE APPS</span>
-        <span class="cs-tag">COMING SOON</span>
+        <span class="cs-label">{{ ls.t('cs_mobile') }}</span>
+        <span class="cs-tag">{{ ls.t('cs_soon') }}</span>
       </div>
       <div class="coming-soon-box">
         <span class="cs-icon">🖥️</span>
-        <span class="cs-label">DESKTOP APPS</span>
-        <span class="cs-tag">COMING SOON</span>
+        <span class="cs-label">{{ ls.t('cs_desktop') }}</span>
+        <span class="cs-tag">{{ ls.t('cs_soon') }}</span>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p class="footer-text">
-      © 2025 Vedad Keskin — Built with Angular & pixel dust ✨
-    </p>
+    <p class="footer-text">{{ ls.t('footer_text') }}</p>
   </footer>
 </main>

@@ -11,7 +11,7 @@
         <!-- Info -->
         <div class="card-body">
             <h3 class="card-title">{{ project.name }}</h3>
-            <p class="card-desc">{{ project.description }}</p>
+            <p class="card-desc">{{ ls.t(project.descriptionKey) }}</p>
             <div class="card-tags">
                 @for (tag of project.tags; track tag) {
                 <span class="tag">{{ tag }}</span>

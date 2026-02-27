@@ -5,13 +5,13 @@
             (click)="wake.wakeAll()" [disabled]="wake.allAwake()" id="wake-all-btn">
             @if (wake.allAwake()) {
             <span class="btn-icon">✅</span>
-            <span class="btn-label">ALL SYSTEMS ONLINE</span>
+            <span class="btn-label">{{ ls.t('wake_btn_done') }}</span>
             } @else if (wake.anyWaking()) {
             <span class="btn-icon spinner">⚡</span>
-            <span class="btn-label">WAKING UP...</span>
+            <span class="btn-label">{{ ls.t('wake_btn_waking') }}</span>
             } @else {
             <span class="btn-icon">⚡</span>
-            <span class="btn-label">WAKE ALL SERVICES</span>
+            <span class="btn-label">{{ ls.t('wake_btn_idle') }}</span>
             }
         </button>
     </div>
@@ -59,10 +59,10 @@
                 <span class="service-name">{{ backend.name }}</span>
                 <span class="service-status-label">
                     @switch (backend.status) {
-                    @case ('sleeping') { SLEEPING }
-                    @case ('waking') { WAKING UP... }
-                    @case ('awake') { ONLINE }
-                    @case ('error') { ERROR }
+                    @case ('sleeping') { {{ ls.t('status_sleeping') }} }
+                    @case ('waking') { {{ ls.t('status_waking') }} }
+                    @case ('awake') { {{ ls.t('status_awake') }} }
+                    @case ('error') { {{ ls.t('status_error') }} }
                     }
                 </span>
             </div>
@@ -85,7 +85,7 @@
     <!-- Reset -->
     @if (wake.allAwake()) {
     <button class="reset-btn" (click)="wake.resetAll()" id="wake-reset-btn">
-        ↺ RESET
+        {{ ls.t('wake_reset') }}
     </button>
     }
 </div>

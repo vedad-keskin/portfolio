@@ -1,0 +1,98 @@
+// ── Portfolio translation keys ──────────────────────────────────────────
+export type TranslationKey =
+    // Nav
+    | 'nav_services' | 'nav_web' | 'nav_mobile' | 'nav_desktop' | 'nav_soon'
+    // Hero
+    | 'hero_greeting' | 'hero_tagline' | 'hero_cta'
+    // Section headers
+    | 'section_services_title' | 'section_services_subtitle'
+    | 'section_web_title' | 'section_web_subtitle'
+    // Backend wake
+    | 'wake_btn_idle' | 'wake_btn_waking' | 'wake_btn_done'
+    | 'status_sleeping' | 'status_waking' | 'status_awake' | 'status_error'
+    | 'wake_reset'
+    // Coming soon
+    | 'cs_mobile' | 'cs_desktop' | 'cs_soon'
+    // Project descriptions
+    | 'nightfall_desc' | 'kino_zona_desc' | 'majstor_ba_desc'
+    | 'festify_desc' | 'bookhana_desc'
+    // Footer
+    | 'footer_text';
+
+// ── English ─────────────────────────────────────────────────────────────
+export const EN: Record<TranslationKey, string> = {
+    nav_services: '⚡ SERVICES',
+    nav_web: '🌐 WEB APPS',
+    nav_mobile: '📱 MOBILE',
+    nav_desktop: '🖥️ DESKTOP',
+    nav_soon: 'SOON',
+
+    hero_greeting: "Hi, I'm",
+    hero_tagline: 'Full-Stack Developer building web, mobile & desktop experiences.',
+    hero_cta: 'VIEW PROJECTS',
+
+    section_services_title: 'BACKEND SERVICES',
+    section_services_subtitle: 'Wake up the free-tier Render backends before exploring the projects.',
+    section_web_title: 'WEB APPS',
+    section_web_subtitle: 'Full-stack web applications built with Angular & .NET',
+
+    wake_btn_idle: 'WAKE ALL SERVICES',
+    wake_btn_waking: 'WAKING UP...',
+    wake_btn_done: 'ALL SYSTEMS ONLINE',
+    status_sleeping: 'SLEEPING',
+    status_waking: 'WAKING UP...',
+    status_awake: 'ONLINE',
+    status_error: 'ERROR',
+    wake_reset: '↺ RESET',
+
+    cs_mobile: 'MOBILE APPS',
+    cs_desktop: 'DESKTOP APPS',
+    cs_soon: 'COMING SOON',
+
+    nightfall_desc: 'A companion web rulebook for the Nightfall mobile game — explaining roles, rules, and gameplay mechanics.',
+    kino_zona_desc: 'A cinema management platform for browsing movies, reserving tickets, and managing screenings.',
+    majstor_ba_desc: 'A platform connecting local craftsmen and service providers with customers across Bosnia.',
+    festify_desc: 'A music festival discovery and ticket booking app — find events, explore lineups, and grab tickets.',
+    bookhana_desc: 'An online bookstore for browsing, reviewing, and purchasing books with user accounts and wishlists.',
+
+    footer_text: '© 2025 Vedad Keskin — Built with Angular & pixel dust ✨',
+};
+
+// ── Bosnian ──────────────────────────────────────────────────────────────
+export const BS: Record<TranslationKey, string> = {
+    nav_services: '⚡ SERVISI',
+    nav_web: '🌐 WEB APPS',
+    nav_mobile: '📱 MOBILNE',
+    nav_desktop: '🖥️ DESKTOP',
+    nav_soon: 'USKORO',
+
+    hero_greeting: 'Ja sam',
+    hero_tagline: 'Full-Stack Developer koji gradi web, mobilna i desktop iskustva.',
+    hero_cta: 'POGLEDAJ PROJEKTE',
+
+    section_services_title: 'BACKEND SERVISI',
+    section_services_subtitle: 'Probudite besplatne Render backend servise prije istraživanja projekata.',
+    section_web_title: 'WEB APLIKACIJE',
+    section_web_subtitle: 'Full-stack web aplikacije izgrađene sa Angular & .NET',
+
+    wake_btn_idle: 'PROBUDI SVE SERVISE',
+    wake_btn_waking: 'BUĐENJE...',
+    wake_btn_done: 'SVI SISTEMI ONLINE',
+    status_sleeping: 'SPAVA',
+    status_waking: 'BUĐENJE...',
+    status_awake: 'AKTIVAN',
+    status_error: 'GREŠKA',
+    wake_reset: '↺ RESETUJ',
+
+    cs_mobile: 'MOBILNE APLIKACIJE',
+    cs_desktop: 'DESKTOP APLIKACIJE',
+    cs_soon: 'USKORO',
+
+    nightfall_desc: 'Web priručnik za Nightfall mobilnu igru — objašnjava uloge, pravila i mehanike igre.',
+    kino_zona_desc: 'Platforma za upravljanje kinom — pretraživanje filmova, rezervacija karata i upravljanje projekcijama.',
+    majstor_ba_desc: 'Platforma koja povezuje lokalne majstore i pružaoce usluga sa korisnicima širom Bosne.',
+    festify_desc: 'Aplikacija za otkrivanje muzičkih festivala i kupovinu karata — pronađite događaje, istražite lineup i nabavite karte.',
+    bookhana_desc: 'Online knjižara za pretraživanje, recenziranje i kupovinu knjiga sa korisničkim računima i listama želja.',
+
+    footer_text: '© 2025 Vedad Keskin — Izgrađeno sa Angular i pixel prahom ✨',
+};

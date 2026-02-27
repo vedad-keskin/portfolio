@@ -1,12 +1,16 @@
-import { Component, signal, HostListener } from '@angular/core';
+import { Component, signal, inject, HostListener } from '@angular/core';
+import { LangSwitchComponent } from '../lang-switch/lang-switch';
+import { LanguageService } from '../../language/language.service';
 
 @Component({
     selector: 'app-nav',
     standalone: true,
+    imports: [LangSwitchComponent],
     templateUrl: './nav.html',
     styleUrl: './nav.css',
 })
 export class NavComponent {
+    readonly ls = inject(LanguageService);
     menuOpen = signal(false);
     scrolled = signal(false);
 

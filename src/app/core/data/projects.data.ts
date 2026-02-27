@@ -4,7 +4,7 @@ export const WEB_PROJECTS: Project[] = [
     {
         id: 'nightfall',
         name: 'Nightfall Guide',
-        description: 'A companion web rulebook for the Nightfall mobile game — explaining roles, rules, and gameplay mechanics.',
+        descriptionKey: 'nightfall_desc',
         logoPath: 'assets/nightfall.png',
         url: 'https://nightfall-project.vercel.app',
         tags: ['Angular', 'Rulebook', 'Game'],
@@ -13,7 +13,7 @@ export const WEB_PROJECTS: Project[] = [
     {
         id: 'kino-zona',
         name: 'Kino Zona',
-        description: 'A cinema management platform for browsing movies, reserving tickets, and managing screenings.',
+        descriptionKey: 'kino_zona_desc',
         logoPath: 'assets/kino-zona.png',
         url: 'https://kino-zona.vercel.app',
         tags: ['Angular', '.NET', 'PostgreSQL', 'Vercel', 'Render', 'Supabase'],
@@ -23,7 +23,7 @@ export const WEB_PROJECTS: Project[] = [
     {
         id: 'majstor-ba',
         name: 'Majstor BA',
-        description: 'A platform connecting local craftsmen and service providers with customers across Bosnia.',
+        descriptionKey: 'majstor_ba_desc',
         logoPath: 'assets/majstor-ba.png',
         url: 'https://majstor-ba.vercel.app',
         tags: ['Angular', '.NET', 'PostgreSQL', 'Vercel', 'Render', 'Supabase'],
@@ -33,7 +33,7 @@ export const WEB_PROJECTS: Project[] = [
     {
         id: 'festify',
         name: 'Festify',
-        description: 'A music festival discovery and ticket booking app — find events, explore lineups, and grab tickets.',
+        descriptionKey: 'festify_desc',
         logoPath: 'assets/festify.png',
         url: 'https://festify-project.vercel.app',
         tags: ['Angular', '.NET', 'PostgreSQL', 'Vercel', 'Render', 'Supabase', 'Leaflet'],
@@ -43,7 +43,7 @@ export const WEB_PROJECTS: Project[] = [
     {
         id: 'bookhana',
         name: 'Bookhana',
-        description: 'An online bookstore for browsing, reviewing, and purchasing books with user accounts and wishlists.',
+        descriptionKey: 'bookhana_desc',
         logoPath: 'assets/bookhana.png',
         url: 'https://bookhana.vercel.app',
         tags: ['Angular', '.NET', 'PostgreSQL', 'Vercel', 'Render', 'Supabase'],

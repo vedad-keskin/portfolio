@@ -1,41 +1,46 @@
 <nav class="navbar" [class.scrolled]="scrolled()">
     <div class="nav-inner">
-        <!-- Brand -->
+        <!-- Brand with favicon logo -->
         <a class="nav-brand" (click)="scrollTo('hero')">
-            <span class="brand-pixel">VK</span>
+            <div class="logo-frame">
+                <img src="favicon.ico" alt="VK Logo" width="32" height="32" class="brand-logo" />
+            </div>
             <span class="brand-sub">PORTFOLIO</span>
         </a>
 
-        <!-- Hamburger (mobile) -->
-        <button class="hamburger" [class.active]="menuOpen()" (click)="toggleMenu()" aria-label="Toggle navigation"
-            id="nav-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <!-- Lang Switch + Hamburger -->
+        <div class="nav-actions">
+            <app-lang-switch />
+            <button class="hamburger" [class.active]="menuOpen()" (click)="toggleMenu()" aria-label="Toggle navigation"
+                id="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
 
         <!-- Nav Links -->
         <ul class="nav-links" [class.open]="menuOpen()">
             <li>
                 <a (click)="scrollTo('wake-services')" id="nav-wake">
-                    ⚡ SERVICES
+                    {{ ls.t('nav_services') }}
                 </a>
             </li>
             <li>
                 <a (click)="scrollTo('web-projects')" id="nav-web">
-                    🌐 WEB APPS
+                    {{ ls.t('nav_web') }}
                 </a>
             </li>
             <li>
                 <a class="disabled" id="nav-mobile">
-                    📱 MOBILE
-                    <span class="coming-soon">SOON</span>
+                    {{ ls.t('nav_mobile') }}
+                    <span class="coming-soon">{{ ls.t('nav_soon') }}</span>
                 </a>
             </li>
             <li>
                 <a class="disabled" id="nav-desktop">
-                    🖥️ DESKTOP
-                    <span class="coming-soon">SOON</span>
+                    {{ ls.t('nav_desktop') }}
+                    <span class="coming-soon">{{ ls.t('nav_soon') }}</span>
                 </a>
             </li>
         </ul>

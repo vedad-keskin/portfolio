@@ -1,0 +1,17 @@
+<button class="lang-switch" (click)="ls.toggle()" [attr.aria-label]="isEn ? 'Switch to Bosnian' : 'Switch to English'">
+    <div class="ls-outer">
+        <div class="ls-inner">
+            <!-- Sliding highlight -->
+            <div class="ls-highlight" [class.right]="!isEn"></div>
+            <!-- Flags -->
+            <div class="ls-flags">
+                <span class="ls-flag" [class.active]="isEn">
+                    <img src="assets/uk.png" alt="English" width="28" height="20" class="ls-flag-img" />
+                </span>
+                <span class="ls-flag" [class.active]="!isEn">
+                    <img src="assets/bih.png" alt="Bosnian" width="28" height="20" class="ls-flag-img" />
+                </span>
+            </div>
+        </div>
+    </div>
+</button>
