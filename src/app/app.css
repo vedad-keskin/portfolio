@@ -170,6 +170,13 @@
     animation: shimmer 0.6s forwards;
 }
 
+/* ===== Scroll targets (align below fixed nav) ===== */
+
+#hero,
+.section {
+    scroll-margin-top: var(--nav-height);
+}
+
 /* ===== Sections ===== */
 
 .section {
