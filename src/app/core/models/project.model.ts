@@ -9,4 +9,5 @@ export interface Project {
     tags: string[];
     category: 'web' | 'mobile' | 'desktop';
     backendUrl?: string;
+    downloadUrl?: string;
 }

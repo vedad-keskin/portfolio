@@ -9,15 +9,20 @@ export type TranslationKey =
     // Section headers
     | 'section_services_title' | 'section_services_subtitle'
     | 'section_web_title' | 'section_web_subtitle'
+    | 'section_mobile_title' | 'section_mobile_subtitle'
     // Backend wake
     | 'wake_btn_idle' | 'wake_btn_waking' | 'wake_btn_done'
     | 'status_sleeping' | 'status_waking' | 'status_awake' | 'status_error'
     | 'wake_reset'
     // Coming soon
-    | 'cs_mobile' | 'cs_desktop' | 'cs_soon'
+    | 'cs_desktop' | 'cs_soon'
     // Project descriptions
     | 'nightfall_desc' | 'kino_zona_desc' | 'majstor_ba_desc'
     | 'festify_desc' | 'bookhana_desc'
+    // Mobile app descriptions
+    | 'nightfall_app_desc' | 'rummy_tracker_desc'
+    // Download
+    | 'download_btn'
     // Footer
     | 'footer_text';
 
@@ -41,6 +46,9 @@ export const EN: Record<TranslationKey, string> = {
     section_web_title: 'WEB APPS',
     section_web_subtitle: 'Full-stack web applications built with Angular & .NET',
 
+    section_mobile_title: 'MOBILE APPS',
+    section_mobile_subtitle: 'Cross-platform mobile games and applications',
+
     wake_btn_idle: 'WAKE ALL SERVICES',
     wake_btn_waking: 'WAKING UP...',
     wake_btn_done: 'ALL SYSTEMS ONLINE',
@@ -50,7 +58,6 @@ export const EN: Record<TranslationKey, string> = {
     status_error: 'ERROR',
     wake_reset: '↺ RESET',
 
-    cs_mobile: 'MOBILE APPS',
     cs_desktop: 'DESKTOP APPS',
     cs_soon: 'COMING SOON',
 
@@ -59,6 +66,10 @@ export const EN: Record<TranslationKey, string> = {
     majstor_ba_desc: 'A platform connecting local craftsmen and service providers with customers across Bosnia.',
     festify_desc: 'A music festival discovery and ticket booking app — find events, explore lineups, and grab tickets.',
     bookhana_desc: 'An online bookstore for browsing, reviewing, and purchasing books with user accounts and wishlists.',
+
+    nightfall_app_desc: 'A werewolf + impostor party game — two classic social deduction games in one app.',
+    rummy_tracker_desc: 'Track scores in Rummy card games — add players, keep round scores, and rank session winners.',
+    download_btn: 'DOWNLOAD APK',
 
     footer_text: '© 2025 Vedad Keskin — Built with Angular & pixel dust ✨',
 };
@@ -83,6 +94,9 @@ export const BS: Record<TranslationKey, string> = {
     section_web_title: 'WEB APLIKACIJE',
     section_web_subtitle: 'Full-stack web aplikacije izgrađene sa Angular & .NET',
 
+    section_mobile_title: 'MOBILNE APLIKACIJE',
+    section_mobile_subtitle: 'Cross-platform mobilne igre i aplikacije',
+
     wake_btn_idle: 'PROBUDI SVE SERVISE',
     wake_btn_waking: 'BUĐENJE...',
     wake_btn_done: 'SVI SISTEMI ONLINE',
@@ -92,7 +106,6 @@ export const BS: Record<TranslationKey, string> = {
     status_error: 'GREŠKA',
     wake_reset: '↺ RESETUJ',
 
-    cs_mobile: 'MOBILNE APLIKACIJE',
     cs_desktop: 'DESKTOP APLIKACIJE',
     cs_soon: 'USKORO',
 
@@ -101,6 +114,10 @@ export const BS: Record<TranslationKey, string> = {
     majstor_ba_desc: 'Platforma koja povezuje lokalne majstore i pružaoce usluga sa korisnicima širom Bosne.',
     festify_desc: 'Aplikacija za otkrivanje muzičkih festivala i kupovinu karata — pronađite događaje, istražite lineup i nabavite karte.',
     bookhana_desc: 'Online knjižara za pretraživanje, recenziranje i kupovinu knjiga sa korisničkim računima i listama želja.',
+
+    nightfall_app_desc: 'Vukodlak + impostor društvene igre — dvije klasične igre dedukcije u jednoj aplikaciji.',
+    rummy_tracker_desc: 'Pratite rezultate u kartaškoj igri Rummy — dodajte igrače, bilježite bodove po rundama i rangirajte pobjednike.',
+    download_btn: 'PREUZMI APK',
 
     footer_text: '© 2025 Vedad Keskin — Izgrađeno sa Angular i pixel prahom ✨',
 };
