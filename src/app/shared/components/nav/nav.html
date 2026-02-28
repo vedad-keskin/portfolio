@@ -35,9 +35,8 @@
                 </a>
             </li>
             <li>
-                <a class="disabled" id="nav-desktop">
+                <a (click)="scrollTo('desktop-apps')" id="nav-desktop">
                     {{ ls.t('nav_desktop') }}
-                    <span class="coming-soon">{{ ls.t('nav_soon') }}</span>
                 </a>
             </li>
         </ul>

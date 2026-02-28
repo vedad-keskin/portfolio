@@ -56,7 +56,7 @@ export const WEB_PROJECTS: Project[] = [
         descriptionKey: 'gms_desc',
         logoPath: 'assets/gms.png',
         url: 'https://gym-mng-system.vercel.app/',
-        tags: ['Angular', '.NET', 'Vercel', 'Render', 'PostgreSQL', 'Docker', 'Supabase','Twilio'],
+        tags: ['Angular', '.NET', 'Vercel', 'Render', 'PostgreSQL', 'Docker', 'Supabase', 'Twilio'],
         category: 'web',
         backendUrl: 'https://gym-management-system-gdin.onrender.com',
     },

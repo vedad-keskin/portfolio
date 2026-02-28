@@ -1,0 +1,227 @@
+:host {
+    display: block;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* ── Card ── */
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(27, 38, 59, 0.6);
+    border: 2px solid var(--frame);
+    color: var(--text);
+    overflow: hidden;
+    transition: all 0.35s var(--ease);
+    position: relative;
+}
+
+.app-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(0, 230, 118, 0.06) 0%,
+            transparent 50%);
+    opacity: 0;
+    transition: opacity 0.35s var(--ease);
+    pointer-events: none;
+}
+
+.app-card:hover {
+    border-color: var(--accent-green);
+    box-shadow:
+        0 0 20px rgba(0, 230, 118, 0.12),
+        4px 4px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+.app-card:hover::before {
+    opacity: 1;
+}
+
+/* ── Logo ── */
+
+.card-logo-wrap {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 27, 42, 0.8);
+    border-bottom: 2px solid var(--frame);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.card-logo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.4s var(--ease);
+}
+
+.app-card:hover .card-logo {
+    transform: scale(1.08);
+}
+
+/* ── Body ── */
+
+.card-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-title {
+    font-family: var(--font-pixel);
+    font-size: 11px;
+    color: var(--accent-green);
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 230, 118, 0.25);
+}
+
+.card-desc {
+    font-family: var(--font-body);
+    font-size: 20px;
+    color: var(--text-dim);
+    line-height: 1.3;
+    flex: 1;
+}
+
+/* ── Tags ── */
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.tag {
+    font-family: var(--font-pixel);
+    font-size: 6px;
+    color: var(--frame-light);
+    border: 1px solid var(--frame);
+    padding: 4px 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.25s var(--ease);
+}
+
+.app-card:hover .tag {
+    border-color: rgba(0, 230, 118, 0.4);
+    color: var(--accent-green);
+}
+
+/* ── Download ── */
+
+.card-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border-top: 2px solid var(--frame);
+    background: rgba(13, 27, 42, 0.4);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s var(--ease);
+}
+
+.download-icon {
+    font-size: 18px;
+    color: var(--text-dim);
+    transition: all 0.3s var(--ease);
+}
+
+.download-text {
+    font-family: var(--font-pixel);
+    font-size: 8px;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    transition: color 0.3s var(--ease);
+}
+
+.app-card:hover .card-download {
+    background: rgba(0, 230, 118, 0.08);
+    border-top-color: rgba(0, 230, 118, 0.4);
+}
+
+.app-card:hover .download-text {
+    color: var(--accent-green);
+}
+
+.app-card:hover .download-icon {
+    color: var(--accent-green);
+    transform: translateY(2px);
+}
+
+/* ===== Tablet+ ===== */
+
+@media (min-width: 600px) {
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .apps-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-logo-wrap {
+        height: 220px;
+    }
+}
+
+/* ===== Small Mobile ===== */
+
+@media (max-width: 350px) {
+    .app-card {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .card-logo-wrap {
+        width: 100px;
+        min-width: 100px;
+        height: auto;
+        border-bottom: none;
+        border-right: 2px solid var(--frame);
+        padding: 12px;
+    }
+
+    .card-body {
+        padding: 14px;
+        gap: 6px;
+    }
+
+    .card-title {
+        font-size: 9px;
+    }
+
+    .card-desc {
+        font-size: 17px;
+    }
+
+    .tag {
+        font-size: 5px;
+        padding: 3px 5px;
+    }
+
+    .card-download {
+        display: none;
+    }
+
+    .apps-grid {
+        gap: 12px;
+    }
+}

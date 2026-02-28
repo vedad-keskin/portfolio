@@ -19,10 +19,11 @@ export type TranslationKey =
     // Project descriptions
     | 'nightfall_desc' | 'kino_zona_desc' | 'majstor_ba_desc'
     | 'festify_desc' | 'bookhana_desc' | 'gms_desc'
-    // Mobile app descriptions
+    // Mobile & Desktop app descriptions
     | 'nightfall_app_desc' | 'rummy_tracker_desc'
+    | 'vital_sphere_mobile_desc' | 'vital_sphere_desktop_desc'
     // Download
-    | 'download_btn'
+    | 'download_btn_apk' | 'download_btn_exe'
     // Footer
     | 'footer_text';
 
@@ -70,7 +71,10 @@ export const EN: Record<TranslationKey, string> = {
 
     nightfall_app_desc: 'A werewolf + impostor party game — two classic social deduction games in one app.',
     rummy_tracker_desc: 'Track scores in Rummy card games — add players, keep round scores, and rank session winners.',
-    download_btn: 'DOWNLOAD APK',
+    vital_sphere_mobile_desc: 'A wellness center management app for browsing products, booking services, and purchasing wellness boxes.',
+    vital_sphere_desktop_desc: 'Admin dashboard for managing the VitalSphere wellness center operations, products, and services.',
+    download_btn_apk: 'DOWNLOAD APK',
+    download_btn_exe: 'DOWNLOAD EXE',
 
     footer_text: '© 2025 Vedad Keskin — Built with Angular & pixel dust ✨',
 };
@@ -119,7 +123,10 @@ export const BS: Record<TranslationKey, string> = {
 
     nightfall_app_desc: 'Vukodlak + impostor društvene igre — dvije klasične igre dedukcije u jednoj aplikaciji.',
     rummy_tracker_desc: 'Pratite rezultate u kartaškoj igri Rummy — dodajte igrače, bilježite bodove po rundama i rangirajte pobjednike.',
-    download_btn: 'PREUZMI APK',
+    vital_sphere_mobile_desc: 'Aplikacija wellness centra za pregled proizvoda, rezervaciju usluga i kupovinu wellness kutija.',
+    vital_sphere_desktop_desc: 'Administrativni panel za upravljanje operacijama, proizvodima i uslugama VitalSphere wellness centra.',
+    download_btn_apk: 'PREUZMI APK',
+    download_btn_exe: 'PREUZMI EXE',
 
     footer_text: '© 2025 Vedad Keskin — Izgrađeno sa Angular i pixel prahom ✨',
 };

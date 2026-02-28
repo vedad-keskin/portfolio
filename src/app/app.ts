@@ -5,9 +5,11 @@ import { SectionHeaderComponent } from './shared/components/section-header/secti
 import { WebProjectsComponent } from './features/web-projects/web-projects';
 import { MobileAppsComponent } from './features/mobile-apps/mobile-apps';
 import { BackendWakeComponent } from './features/backend-wake/backend-wake';
+import { DesktopAppsComponent } from './features/desktop-apps/desktop-apps';
 import { LanguageService } from './shared/language/language.service';
 import { WEB_PROJECTS } from './core/data/projects.data';
 import { MOBILE_APPS } from './core/data/mobile-apps.data';
+import { DESKTOP_APPS } from './core/data/desktop-apps.data';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +20,7 @@ import { MOBILE_APPS } from './core/data/mobile-apps.data';
     SectionHeaderComponent,
     WebProjectsComponent,
     MobileAppsComponent,
+    DesktopAppsComponent,
     BackendWakeComponent,
   ],
   templateUrl: './app.html',
@@ -25,6 +28,6 @@ import { MOBILE_APPS } from './core/data/mobile-apps.data';
 })
 export class App {
   readonly ls = inject(LanguageService);
-  readonly techStack = [...new Set([...WEB_PROJECTS, ...MOBILE_APPS].flatMap(p => p.tags))];
-  readonly projectCount = WEB_PROJECTS.length + MOBILE_APPS.length;
+  readonly techStack = [...new Set([...WEB_PROJECTS, ...MOBILE_APPS, ...DESKTOP_APPS].flatMap(p => p.tags))];
+  readonly projectCount = WEB_PROJECTS.length + MOBILE_APPS.length + DESKTOP_APPS.length;
 }

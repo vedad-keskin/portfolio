@@ -21,4 +21,15 @@ export const MOBILE_APPS: Project[] = [
         tags: ['Android', 'Flutter', 'Game'],
         category: 'mobile',
     },
+    {
+        id: 'vital-sphere',
+        name: 'Vital Sphere',
+        descriptionKey: 'vital_sphere_mobile_desc',
+        logoPath: 'assets/vital-sphere.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/vital-sphere.v2.2.2/vital-sphere.v2.2.2.apk',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/vital-sphere.v2.2.2/vital-sphere.v2.2.2.apk',
+        tags: ['Android', 'Flutter', 'RabbitMQ', 'Stripe', 'Supabase', 'Render', '.NET', 'Docker'],
+        category: 'mobile',
+        backendUrl: 'https://vitalsphere.onrender.com',
+    },
 ];
