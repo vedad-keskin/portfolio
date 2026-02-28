@@ -18,7 +18,7 @@ export type TranslationKey =
     | 'cs_desktop' | 'cs_soon'
     // Project descriptions
     | 'nightfall_desc' | 'kino_zona_desc' | 'majstor_ba_desc'
-    | 'festify_desc' | 'bookhana_desc'
+    | 'festify_desc' | 'bookhana_desc' | 'gms_desc'
     // Mobile app descriptions
     | 'nightfall_app_desc' | 'rummy_tracker_desc'
     // Download
@@ -66,6 +66,7 @@ export const EN: Record<TranslationKey, string> = {
     majstor_ba_desc: 'A platform connecting local craftsmen and service providers with customers across Bosnia.',
     festify_desc: 'A music festival discovery and ticket booking app — find events, explore lineups, and grab tickets.',
     bookhana_desc: 'An online bookstore for browsing, reviewing, and purchasing books with user accounts and wishlists.',
+    gms_desc: 'Platform for managing gym memberships, trainers, nutrition plans, and supplement purchases in one place.',
 
     nightfall_app_desc: 'A werewolf + impostor party game — two classic social deduction games in one app.',
     rummy_tracker_desc: 'Track scores in Rummy card games — add players, keep round scores, and rank session winners.',
@@ -114,6 +115,7 @@ export const BS: Record<TranslationKey, string> = {
     majstor_ba_desc: 'Platforma koja povezuje lokalne majstore i pružaoce usluga sa korisnicima širom Bosne.',
     festify_desc: 'Aplikacija za otkrivanje muzičkih festivala i kupovinu karata — pronađite događaje, istražite lineup i nabavite karte.',
     bookhana_desc: 'Online knjižara za pretraživanje, recenziranje i kupovinu knjiga sa korisničkim računima i listama želja.',
+    gms_desc: 'Platforma za upravljanje članarinama u teretani, trenerima, planovima ishrane i kupovinom suplemenata na jednom mjestu.',
 
     nightfall_app_desc: 'Vukodlak + impostor društvene igre — dvije klasične igre dedukcije u jednoj aplikaciji.',
     rummy_tracker_desc: 'Pratite rezultate u kartaškoj igri Rummy — dodajte igrače, bilježite bodove po rundama i rangirajte pobjednike.',
