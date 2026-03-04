@@ -32,4 +32,15 @@ export const MOBILE_APPS: Project[] = [
         category: 'mobile',
         backendUrl: 'https://vitalsphere.onrender.com',
     },
+    {
+        id: 'erent-mobile',
+        name: 'eRent',
+        descriptionKey: 'erent_app_desc',
+        logoPath: 'assets/erent.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/erent-client.v1.2.3/erent.v1.2.3.apk',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/erent-client.v1.2.3/erent.v1.2.3.apk',
+        tags: ['Android', 'Flutter', 'Stripe', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render', 'Maps'],
+        category: 'mobile',
+        backendUrl: 'https://erent-a3tr.onrender.com',
+    },
 ];

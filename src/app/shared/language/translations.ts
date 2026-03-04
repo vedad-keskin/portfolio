@@ -22,6 +22,7 @@ export type TranslationKey =
     // Mobile & Desktop app descriptions
     | 'nightfall_app_desc' | 'rummy_tracker_desc'
     | 'vital_sphere_mobile_desc' | 'vital_sphere_desktop_desc'
+    | 'erent_app_desc'
     // Download
     | 'download_btn_apk' | 'download_btn_exe'
     // Footer
@@ -73,6 +74,7 @@ export const EN: Record<TranslationKey, string> = {
     rummy_tracker_desc: 'Track scores in Rummy card games — add players, keep round scores, and rank session winners.',
     vital_sphere_mobile_desc: 'A wellness center management app for browsing products, booking services, and purchasing wellness boxes.',
     vital_sphere_desktop_desc: 'Admin dashboard for managing the VitalSphere wellness center operations, products, and services.',
+    erent_app_desc: 'Comprehensive real estate platform for renting apartments, scheduling viewings, and secure payments with Stripe integration.',
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
@@ -125,6 +127,7 @@ export const BS: Record<TranslationKey, string> = {
     rummy_tracker_desc: 'Pratite rezultate u kartaškoj igri Rummy — dodajte igrače, bilježite bodove po rundama i rangirajte pobjednike.',
     vital_sphere_mobile_desc: 'Aplikacija wellness centra za pregled proizvoda, rezervaciju usluga i kupovinu wellness kutija.',
     vital_sphere_desktop_desc: 'Administrativni panel za upravljanje operacijama, proizvodima i uslugama VitalSphere wellness centra.',
+    erent_app_desc: 'Sveobuhvatna platforma za nekretnine za iznajmljivanje stanova, zakazivanje pregleda i sigurno plaćanje uz Stripe integraciju.',
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
 
