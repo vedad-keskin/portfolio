@@ -23,6 +23,7 @@ export type TranslationKey =
     | 'nightfall_app_desc' | 'rummy_tracker_desc'
     | 'vital_sphere_mobile_desc' | 'vital_sphere_desktop_desc'
     | 'erent_app_desc'
+    | 'bella_app_desc' | 'bella_hairdresser_app_desc' | 'bella_admin_desc'
     // Download
     | 'download_btn_apk' | 'download_btn_exe'
     // Footer
@@ -75,6 +76,9 @@ export const EN: Record<TranslationKey, string> = {
     vital_sphere_mobile_desc: 'A wellness center management app for browsing products, booking services, and purchasing wellness boxes.',
     vital_sphere_desktop_desc: 'Admin dashboard for managing the VitalSphere wellness center operations, products, and services.',
     erent_app_desc: 'Comprehensive real estate platform for renting apartments, scheduling viewings, and secure payments with Stripe integration.',
+    bella_app_desc: 'A salon application for clients to book haircuts, purchase hair products, and manage their appointments.',
+    bella_hairdresser_app_desc: 'A dedicated application for hairdressers to efficiently keep track of their daily appointments and schedules.',
+    bella_admin_desc: 'An administrative desktop application to manage the entire salon business, track operations, and oversee business flows.',
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
@@ -128,6 +132,9 @@ export const BS: Record<TranslationKey, string> = {
     vital_sphere_mobile_desc: 'Aplikacija wellness centra za pregled proizvoda, rezervaciju usluga i kupovinu wellness kutija.',
     vital_sphere_desktop_desc: 'Administrativni panel za upravljanje operacijama, proizvodima i uslugama VitalSphere wellness centra.',
     erent_app_desc: 'Sveobuhvatna platforma za nekretnine za iznajmljivanje stanova, zakazivanje pregleda i sigurno plaćanje uz Stripe integraciju.',
+    bella_app_desc: 'Aplikacija za klijente za rezervaciju frizura, kupovinu proizvoda za kosu i upravljanje terminima.',
+    bella_hairdresser_app_desc: 'Namjenska aplikacija za frizere za efikasno praćenje dnevnih termina i rasporeda.',
+    bella_admin_desc: 'Administrativna desktop aplikacija za upravljanje cjelokupnim poslovanjem sa uvidom u sve operacije.',
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
 
