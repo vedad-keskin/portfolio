@@ -56,4 +56,15 @@ export const DESKTOP_APPS: Project[] = [
         backendUrl: 'https://mosmartpark.onrender.com',
         category: 'desktop',
     },
+    {
+        id: 'cinevibe-admin',
+        name: 'CineVibe Admin',
+        descriptionKey: 'cinevibe_admin_desc',
+        logoPath: 'assets/cine-vibe.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/cinevibe-admin.v1.3.3/CineVibe.Admin.v.1.3.3.rar',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/cinevibe-admin.v1.3.3/CineVibe.Admin.v.1.3.3.rar',
+        tags: ['Windows', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render', 'Supabase'],
+        backendUrl: 'https://cinevibe-ha00.onrender.com',
+        category: 'desktop',
+    },
 ];

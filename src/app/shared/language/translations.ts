@@ -25,6 +25,7 @@ export type TranslationKey =
     | 'erent_app_desc'
     | 'bella_app_desc' | 'bella_hairdresser_app_desc' | 'bella_admin_desc'
     | 'mo_smart_park_app_desc' | 'mo_smart_park_admin_desc'
+    | 'cinevibe_app_desc' | 'cinevibe_admin_desc'
     // Download
     | 'download_btn_apk' | 'download_btn_exe'
     // Footer
@@ -82,6 +83,8 @@ export const EN: Record<TranslationKey, string> = {
     bella_admin_desc: 'An administrative desktop application to manage the entire salon business, track operations, and oversee business flows.',
     mo_smart_park_app_desc: 'A smart parking mobile app for finding, navigating to, and reserving parking spots with secure payments.',
     mo_smart_park_admin_desc: 'An administrative dashboard for managing parking zones, spots, and monitoring active reservations.',
+    cinevibe_app_desc: 'A cinema app for users to browse movies, reserve tickets, and order snacks.',
+    cinevibe_admin_desc: 'A desktop administrative application to manage cinema operations, ticket sales, and snacks.',
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
@@ -140,6 +143,8 @@ export const BS: Record<TranslationKey, string> = {
     bella_admin_desc: 'Administrativna desktop aplikacija za upravljanje cjelokupnim poslovanjem sa uvidom u sve operacije.',
     mo_smart_park_app_desc: 'Mobilna aplikacija za pametno parkiranje - pronalaženje, navigacija i rezervacija parking mjesta sa sigurnim plaćanjem.',
     mo_smart_park_admin_desc: 'Administrativna desktop aplikacija za upravljanje parking zonama, mjestima i praćenje aktivnih rezervacija.',
+    cinevibe_app_desc: 'Kino aplikacija za korisnike za pregled filmova, rezervaciju karata i naručivanje grickalica.',
+    cinevibe_admin_desc: 'Desktop administrativna aplikacija za upravljanje kino operacijama, prodaje karata i grickalica.',
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
 

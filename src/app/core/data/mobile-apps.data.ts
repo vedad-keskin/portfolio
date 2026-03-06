@@ -76,4 +76,15 @@ export const MOBILE_APPS: Project[] = [
         category: 'mobile',
         backendUrl: 'https://mosmartpark.onrender.com',
     },
+    {
+        id: 'cinevibe-mobile',
+        name: 'CineVibe',
+        descriptionKey: 'cinevibe_app_desc',
+        logoPath: 'assets/cine-vibe.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/cinevibe.v1.3.3/cinevibe.v1.3.3.apk',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/cinevibe.v1.3.3/cinevibe.v1.3.3.apk',
+        tags: ['Android', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render', 'Supabase', 'Youtube Player'],
+        category: 'mobile',
+        backendUrl: 'https://cinevibe-ha00.onrender.com',
+    },
 ];
