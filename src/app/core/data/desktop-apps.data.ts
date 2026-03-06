@@ -45,4 +45,15 @@ export const DESKTOP_APPS: Project[] = [
         backendUrl: 'https://bella-hamf.onrender.com',
         category: 'desktop',
     },
+    {
+        id: 'mo-smart-park-admin',
+        name: 'MoSmartPark Admin',
+        descriptionKey: 'mo_smart_park_admin_desc',
+        logoPath: 'assets/mo-smart-park.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/mo-smart-park.v3.1.1/MoSmartPark.v3.1.2.rar',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/mo-smart-park.v3.1.1/MoSmartPark.v3.1.2.rar',
+        tags: ['Windows', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render', 'Docker', 'Maps'],
+        backendUrl: 'https://mosmartpark.onrender.com',
+        category: 'desktop',
+    },
 ];

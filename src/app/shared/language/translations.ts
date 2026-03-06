@@ -24,6 +24,7 @@ export type TranslationKey =
     | 'vital_sphere_mobile_desc' | 'vital_sphere_desktop_desc'
     | 'erent_app_desc'
     | 'bella_app_desc' | 'bella_hairdresser_app_desc' | 'bella_admin_desc'
+    | 'mo_smart_park_app_desc' | 'mo_smart_park_admin_desc'
     // Download
     | 'download_btn_apk' | 'download_btn_exe'
     // Footer
@@ -79,6 +80,8 @@ export const EN: Record<TranslationKey, string> = {
     bella_app_desc: 'A salon application for clients to book haircuts, purchase hair products, and manage their appointments.',
     bella_hairdresser_app_desc: 'A dedicated application for hairdressers to efficiently keep track of their daily appointments and schedules.',
     bella_admin_desc: 'An administrative desktop application to manage the entire salon business, track operations, and oversee business flows.',
+    mo_smart_park_app_desc: 'A smart parking mobile app for finding, navigating to, and reserving parking spots with secure payments.',
+    mo_smart_park_admin_desc: 'An administrative dashboard for managing parking zones, spots, and monitoring active reservations.',
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
@@ -135,6 +138,8 @@ export const BS: Record<TranslationKey, string> = {
     bella_app_desc: 'Aplikacija za klijente za rezervaciju frizura, kupovinu proizvoda za kosu i upravljanje terminima.',
     bella_hairdresser_app_desc: 'Namjenska aplikacija za frizere za efikasno praćenje dnevnih termina i rasporeda.',
     bella_admin_desc: 'Administrativna desktop aplikacija za upravljanje cjelokupnim poslovanjem sa uvidom u sve operacije.',
+    mo_smart_park_app_desc: 'Mobilna aplikacija za pametno parkiranje - pronalaženje, navigacija i rezervacija parking mjesta sa sigurnim plaćanjem.',
+    mo_smart_park_admin_desc: 'Administrativna desktop aplikacija za upravljanje parking zonama, mjestima i praćenje aktivnih rezervacija.',
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
 
