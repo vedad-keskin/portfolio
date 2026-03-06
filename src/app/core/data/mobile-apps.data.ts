@@ -83,7 +83,7 @@ export const MOBILE_APPS: Project[] = [
         logoPath: 'assets/cine-vibe.png',
         url: 'https://github.com/vedad-keskin/app-releases/releases/download/cinevibe.v1.3.3/cinevibe.v1.3.3.apk',
         downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/cinevibe.v1.3.3/cinevibe.v1.3.3.apk',
-        tags: ['Android', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render', 'Supabase', 'Youtube Player'],
+        tags: ['Android', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render', 'Youtube Player'],
         category: 'mobile',
         backendUrl: 'https://cinevibe-ha00.onrender.com',
     },
