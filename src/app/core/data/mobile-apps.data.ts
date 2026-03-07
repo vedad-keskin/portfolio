@@ -87,4 +87,15 @@ export const MOBILE_APPS: Project[] = [
         category: 'mobile',
         backendUrl: 'https://cinevibe-ha00.onrender.com',
     },
+    {
+        id: 'manifest-mobile',
+        name: 'Manifest',
+        descriptionKey: 'manifest_app_desc',
+        logoPath: 'assets/manifest.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/manifest.v1.1.1/mainfest.v1.1.1.apk',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/manifest.v1.1.1/mainfest.v1.1.1.apk',
+        tags: ['Android', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render', 'Stripe'],
+        category: 'mobile',
+        backendUrl: 'https://manifest-3q4q.onrender.com',
+    },
 ];

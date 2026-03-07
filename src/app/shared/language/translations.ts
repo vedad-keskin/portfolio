@@ -26,6 +26,7 @@ export type TranslationKey =
     | 'bella_app_desc' | 'bella_hairdresser_app_desc' | 'bella_admin_desc'
     | 'mo_smart_park_app_desc' | 'mo_smart_park_admin_desc'
     | 'cinevibe_app_desc' | 'cinevibe_admin_desc'
+    | 'manifest_app_desc' | 'manifest_admin_desc'
     // Download
     | 'download_btn_apk' | 'download_btn_exe'
     // Footer
@@ -85,6 +86,8 @@ export const EN: Record<TranslationKey, string> = {
     mo_smart_park_admin_desc: 'An administrative dashboard for managing parking zones, spots, and monitoring active reservations.',
     cinevibe_app_desc: 'A cinema app for users to browse movies, reserve tickets, and order snacks.',
     cinevibe_admin_desc: 'A desktop administrative application to manage cinema operations, ticket sales, and snacks.',
+    manifest_app_desc: 'A festival application for exploring lineups, purchasing tickets, and managing event passes.',
+    manifest_admin_desc: 'An administrative desktop application for managing festival operations, ticket sales, and event scanning.',
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
@@ -145,6 +148,8 @@ export const BS: Record<TranslationKey, string> = {
     mo_smart_park_admin_desc: 'Administrativna desktop aplikacija za upravljanje parking zonama, mjestima i praćenje aktivnih rezervacija.',
     cinevibe_app_desc: 'Kino aplikacija za korisnike za pregled filmova, rezervaciju karata i naručivanje grickalica.',
     cinevibe_admin_desc: 'Desktop administrativna aplikacija za upravljanje kino operacijama, prodaje karata i grickalica.',
+    manifest_app_desc: 'Festivalska aplikacija za istraživanje izvođača, kupovinu karata i upravljanje propusnicama za događaje.',
+    manifest_admin_desc: 'Administrativna desktop aplikacija za upravljanje festivalskim operacijama, prodajom karata i skeniranjem na ulazu.',
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
 
