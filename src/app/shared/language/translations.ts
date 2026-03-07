@@ -27,6 +27,7 @@ export type TranslationKey =
     | 'mo_smart_park_app_desc' | 'mo_smart_park_admin_desc'
     | 'cinevibe_app_desc' | 'cinevibe_admin_desc'
     | 'manifest_app_desc' | 'manifest_admin_desc'
+    | 'calltaxi_app_desc' | 'calltaxi_driver_app_desc' | 'calltaxi_admin_desc'
     // Download
     | 'download_btn_apk' | 'download_btn_exe'
     // Footer
@@ -88,6 +89,9 @@ export const EN: Record<TranslationKey, string> = {
     cinevibe_admin_desc: 'A desktop administrative application to manage cinema operations, ticket sales, and snacks.',
     manifest_app_desc: 'A festival application for exploring lineups, purchasing tickets, and managing event passes.',
     manifest_admin_desc: 'An administrative desktop application for managing festival operations, ticket sales, and event scanning.',
+    calltaxi_app_desc: 'A taxi reservation app for users to book rides, track routes, and estimate arrival times.',
+    calltaxi_driver_app_desc: 'A dedicated app for taxi drivers to receive ride requests, manage their status, and navigate to customers.',
+    calltaxi_admin_desc: 'A desktop administrative application to manage taxi operations, oversee drivers, and monitor rides.',
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
@@ -150,6 +154,9 @@ export const BS: Record<TranslationKey, string> = {
     cinevibe_admin_desc: 'Desktop administrativna aplikacija za upravljanje kino operacijama, prodaje karata i grickalica.',
     manifest_app_desc: 'Festivalska aplikacija za istraživanje izvođača, kupovinu karata i upravljanje propusnicama za događaje.',
     manifest_admin_desc: 'Administrativna desktop aplikacija za upravljanje festivalskim operacijama, prodajom karata i skeniranjem na ulazu.',
+    calltaxi_app_desc: 'Aplikacija za rezervaciju taksija za korisnike za naručivanje vožnji, praćenje ruta i procjenu vremena dolaska.',
+    calltaxi_driver_app_desc: 'Namjenska aplikacija za taksiste za primanje zahtjeva za vožnju, upravljanje statusom i navigaciju do klijenata.',
+    calltaxi_admin_desc: 'Desktop administrativna aplikacija za upravljanje taksi operacijama, nadzor vozača i praćenje vožnji.',
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
 

@@ -78,4 +78,15 @@ export const DESKTOP_APPS: Project[] = [
         backendUrl: 'https://manifest-3q4q.onrender.com',
         category: 'desktop',
     },
+    {
+        id: 'calltaxi-admin',
+        name: 'Call Taxi Admin',
+        descriptionKey: 'calltaxi_admin_desc',
+        logoPath: 'assets/calltaxi.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/calltaxi-admin.v1.2.2/Call.Taxi.Admin.v1.2.2.rar',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/calltaxi-admin.v1.2.2/Call.Taxi.Admin.v1.2.2.rar',
+        tags: ['Windows', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render', 'Docker', 'Maps'],
+        backendUrl: 'https://call-taxi-3weu.onrender.com',
+        category: 'desktop',
+    },
 ];
