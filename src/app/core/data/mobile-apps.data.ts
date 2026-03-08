@@ -120,4 +120,15 @@ export const MOBILE_APPS: Project[] = [
         category: 'mobile',
         backendUrl: 'https://call-taxi-3weu.onrender.com',
     },
+    {
+        id: 'iron-vault',
+        name: 'Iron Vault',
+        descriptionKey: 'iron_vault_app_desc',
+        logoPath: 'assets/iron-vault.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/ironvault.v1.1.1/iron-vault.v1.1.1.apk',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/ironvault.v1.1.1/iron-vault.v1.1.1.apk',
+        tags: ['Android', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render'],
+        category: 'mobile',
+        backendUrl: 'https://iron-vault.onrender.com',
+    },
 ];

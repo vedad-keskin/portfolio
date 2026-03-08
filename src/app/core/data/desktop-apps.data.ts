@@ -89,4 +89,15 @@ export const DESKTOP_APPS: Project[] = [
         backendUrl: 'https://call-taxi-3weu.onrender.com',
         category: 'desktop',
     },
+    {
+        id: 'iron-vault-admin',
+        name: 'Iron Vault Admin',
+        descriptionKey: 'iron_vault_admin_desc',
+        logoPath: 'assets/iron-vault.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/ironvault-admin.v1.1.1/IronVault.Admin.V.1.1.1.rar',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/ironvault-admin.v1.1.1/IronVault.Admin.V.1.1.1.rar',
+        tags: ['Windows', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render'],
+        backendUrl: 'https://iron-vault.onrender.com',
+        category: 'desktop',
+    },
 ];
