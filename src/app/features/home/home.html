@@ -1,0 +1,59 @@
+<!-- Hero -->
+<section class="hero" id="hero">
+    <div class="hero-inner">
+        <p class="hero-greeting">{{ ls.t('hero_greeting') }}</p>
+        <h1 class="hero-name">Vedad Keskin</h1>
+        <p class="hero-tagline">{{ ls.t('hero_tagline') }}</p>
+        <div class="hero-stats">
+            <div class="stat-box">
+                <span class="stat-number">{{ projectCount }}</span>
+                <span class="stat-label">{{ ls.t('hero_counter') }}</span>
+            </div>
+        </div>
+        <div class="tech-stack">
+            @for (tag of techStack; track tag) {
+            <span class="tech-tag">{{ tag }}</span>
+            }
+        </div>
+        <div class="hero-cta">
+            <a class="cta-btn" href="#web-projects">{{ ls.t('hero_cta') }}</a>
+        </div>
+    </div>
+</section>
+
+<!-- Backend Wake -->
+<section class="section" id="wake-services">
+    <div class="section-inner">
+        <app-section-header [title]="ls.t('section_services_title')" [subtitle]="ls.t('section_services_subtitle')" />
+        <app-backend-wake />
+    </div>
+</section>
+
+<!-- Web Projects -->
+<section class="section" id="web-projects">
+    <div class="section-inner">
+        <app-section-header [title]="ls.t('section_web_title')" [subtitle]="ls.t('section_web_subtitle')" />
+        <app-web-projects />
+    </div>
+</section>
+
+<!-- Mobile Apps -->
+<section class="section" id="mobile-apps">
+    <div class="section-inner">
+        <app-section-header [title]="ls.t('section_mobile_title')" [subtitle]="ls.t('section_mobile_subtitle')" />
+        <app-mobile-apps />
+    </div>
+</section>
+
+<!-- Desktop Apps -->
+<section class="section" id="desktop-apps">
+    <div class="section-inner">
+        <app-section-header [title]="ls.t('cs_desktop')" subtitle="Cross-platform desktop applications" />
+        <app-desktop-apps />
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p class="footer-text">{{ ls.t('footer_text') }}</p>
+</footer>

@@ -1,29 +1,31 @@
 <div class="projects-grid">
     @for (project of projects; track project.id) {
-    <a class="project-card" [href]="project.url" target="_blank" rel="noopener noreferrer"
-        [id]="'project-' + project.id">
+    <div class="project-card" [id]="'project-' + project.id">
 
-        <!-- Logo -->
-        <div class="card-logo-wrap">
-            <img [src]="project.logoPath" [alt]="project.name + ' logo'" class="card-logo" loading="lazy" />
-        </div>
-
-        <!-- Info -->
-        <div class="card-body">
-            <h3 class="card-title">{{ project.name }}</h3>
-            <p class="card-desc">{{ ls.t(project.descriptionKey) }}</p>
-            <div class="card-tags">
-                @for (tag of project.tags; track tag) {
-                <span class="tag">{{ tag }}</span>
-                }
+        <!-- Clickable area → detail page -->
+        <a class="card-link" [routerLink]="['/project', project.id]">
+            <!-- Logo -->
+            <div class="card-logo-wrap">
+                <img [src]="project.logoPath" [alt]="project.name + ' logo'" class="card-logo" loading="lazy" />
             </div>
-        </div>
 
-        <!-- Visit indicator -->
-        <div class="card-visit">
+            <!-- Info -->
+            <div class="card-body">
+                <h3 class="card-title">{{ project.name }}</h3>
+                <p class="card-desc">{{ ls.t(project.descriptionKey) }}</p>
+                <div class="card-tags">
+                    @for (tag of project.tags; track tag) {
+                    <span class="tag">{{ tag }}</span>
+                    }
+                </div>
+            </div>
+        </a>
+
+        <!-- Visit (external link, stays separate) -->
+        <a class="card-visit" [href]="project.url" target="_blank" rel="noopener noreferrer">
             <span class="visit-text">{{ ls.t('visit_btn') }}</span>
             <span class="visit-arrow">→</span>
-        </div>
-    </a>
+        </a>
+    </div>
     }
 </div>

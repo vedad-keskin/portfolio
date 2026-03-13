@@ -1,4 +1,5 @@
 import { Component, signal, inject, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 import { LangSwitchComponent } from '../lang-switch/lang-switch';
 import { LanguageService } from '../../language/language.service';
 
@@ -10,6 +11,7 @@ import { LanguageService } from '../../language/language.service';
     styleUrl: './nav.css',
 })
 export class NavComponent {
+    private readonly router = inject(Router);
     readonly ls = inject(LanguageService);
     menuOpen = signal(false);
     scrolled = signal(false);
@@ -29,6 +31,26 @@ export class NavComponent {
 
     scrollTo(id: string): void {
         this.closeMenu();
+
+        if (this.router.url !== '/') {
+            this.router.navigate(['/']).then(() => {
+                setTimeout(() => this.doScroll(id), 100);
+            });
+        } else {
+            this.doScroll(id);
+        }
+    }
+
+    goHome(): void {
+        this.closeMenu();
+        if (this.router.url !== '/') {
+            this.router.navigate(['/']);
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+
+    private doScroll(id: string): void {
         const el = document.getElementById(id);
         if (el) {
             el.scrollIntoView({ behavior: 'smooth', block: 'start' });

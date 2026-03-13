@@ -31,6 +31,10 @@ export type TranslationKey =
     | 'calltaxi_app_desc' | 'calltaxi_driver_app_desc' | 'calltaxi_admin_desc'
     // Download
     | 'download_btn_apk' | 'download_btn_exe'
+    // Detail page
+    | 'detail_back' | 'detail_visit' | 'detail_download'
+    | 'detail_tech' | 'detail_category' | 'detail_backend'
+    | 'detail_wake_backend' | 'detail_not_found' | 'detail_not_found_sub'
     // Footer
     | 'footer_text';
 
@@ -98,6 +102,16 @@ export const EN: Record<TranslationKey, string> = {
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
+    detail_back: '← BACK',
+    detail_visit: 'VISIT LIVE SITE →',
+    detail_download: 'DOWNLOAD →',
+    detail_tech: 'TECH STACK',
+    detail_category: 'CATEGORY',
+    detail_backend: 'BACKEND',
+    detail_wake_backend: 'WAKE BACKEND',
+    detail_not_found: 'PROJECT NOT FOUND',
+    detail_not_found_sub: 'The project you are looking for does not exist.',
+
     footer_text: '© 2025 Vedad Keskin — Built with Angular & pixel dust ✨',
 };
 
@@ -164,6 +178,16 @@ export const BS: Record<TranslationKey, string> = {
     calltaxi_admin_desc: 'Desktop administrativna aplikacija za upravljanje taksi operacijama, nadzor vozača i praćenje vožnji.',
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
+
+    detail_back: '← NAZAD',
+    detail_visit: 'POSJETI STRANICU →',
+    detail_download: 'PREUZMI →',
+    detail_tech: 'TEHNOLOGIJE',
+    detail_category: 'KATEGORIJA',
+    detail_backend: 'BACKEND',
+    detail_wake_backend: 'PROBUDI BACKEND',
+    detail_not_found: 'PROJEKAT NIJE PRONAĐEN',
+    detail_not_found_sub: 'Projekat koji tražite ne postoji.',
 
     footer_text: '© 2025 Vedad Keskin — Izgrađeno sa Angular i pixel prahom ✨',
 };

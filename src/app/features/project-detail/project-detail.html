@@ -1,0 +1,81 @@
+@if (project(); as p) {
+<div class="detail">
+    <!-- Top bar -->
+    <div class="detail__top">
+        <a class="detail__back" routerLink="/">{{ ls.t('detail_back') }}</a>
+    </div>
+
+    <!-- Hero card -->
+    <div class="detail__hero">
+        <div class="detail__logo-wrap">
+            <img [src]="p.logoPath" [alt]="p.name + ' logo'" class="detail__logo" />
+        </div>
+        <div class="detail__glow"></div>
+    </div>
+
+    <!-- Title -->
+    <h1 class="detail__name">{{ p.name }}</h1>
+
+    <!-- Category badge -->
+    <span class="detail__category">{{ categoryLabel }}</span>
+
+    <!-- Description -->
+    <p class="detail__desc">{{ ls.t(p.descriptionKey) }}</p>
+
+    <!-- Tech stack -->
+    <div class="detail__section">
+        <h2 class="detail__section-title">{{ ls.t('detail_tech') }}</h2>
+        <div class="detail__tags">
+            @for (tag of p.tags; track tag) {
+            <span class="detail__tag">{{ tag }}</span>
+            }
+        </div>
+    </div>
+
+    <!-- Backend status -->
+    @if (p.backendUrl) {
+    <div class="detail__section">
+        <h2 class="detail__section-title">{{ ls.t('detail_backend') }}</h2>
+        <div class="detail__backend">
+            <span class="detail__backend-url">{{ p.backendUrl }}</span>
+            <button class="detail__wake-btn"
+                [class.waking]="wakeStatus() === 'waking'"
+                [class.done]="wakeStatus() === 'done'"
+                [disabled]="wakeStatus() === 'waking' || wakeStatus() === 'done'"
+                (click)="wakeBackend()">
+                @switch (wakeStatus()) {
+                    @case ('idle') { {{ ls.t('detail_wake_backend') }} }
+                    @case ('waking') { ⏳ {{ ls.t('status_waking') }} }
+                    @case ('done') { ✓ {{ ls.t('status_awake') }} }
+                    @case ('error') { ✗ {{ ls.t('status_error') }} }
+                }
+            </button>
+        </div>
+    </div>
+    }
+
+    <!-- Primary action -->
+    <div class="detail__actions">
+        <a class="detail__action-btn" [href]="actionUrl" target="_blank" rel="noopener noreferrer">
+            {{ actionLabel }}
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="detail__footer">
+        <p class="detail__footer-text">{{ ls.t('footer_text') }}</p>
+    </footer>
+</div>
+} @else {
+<div class="detail detail--empty">
+    <div class="detail__top">
+        <a class="detail__back" routerLink="/">{{ ls.t('detail_back') }}</a>
+    </div>
+    <div class="detail__not-found">
+        <span class="nf-icon">?</span>
+        <h1 class="nf-title">{{ ls.t('detail_not_found') }}</h1>
+        <p class="nf-sub">{{ ls.t('detail_not_found_sub') }}</p>
+        <a class="detail__action-btn" routerLink="/">{{ ls.t('detail_back') }}</a>
+    </div>
+</div>
+}

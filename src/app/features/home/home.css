@@ -1,0 +1,245 @@
+:host {
+    display: block;
+}
+
+/* ===== Hero ===== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 60px;
+}
+
+.hero-inner {
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-greeting {
+    font-family: var(--font-body);
+    font-size: 28px;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.hero-name {
+    font-family: var(--font-pixel);
+    font-size: 24px;
+    color: var(--accent);
+    text-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+    letter-spacing: 3px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.hero-tagline {
+    font-family: var(--font-body);
+    font-size: 26px;
+    color: var(--text-dim);
+    line-height: 1.4;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+/* ── Tech Stack Tags ── */
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-tag {
+    font-family: var(--font-pixel);
+    font-size: 7px;
+    color: var(--text-dim);
+    border: 1px solid var(--frame);
+    padding: 6px 12px;
+    letter-spacing: 1px;
+    transition: all 0.25s var(--ease);
+    background: rgba(27, 38, 59, 0.3);
+}
+
+.tech-tag:hover {
+    color: var(--accent);
+    border-color: var(--accent-dim);
+    background: rgba(0, 229, 255, 0.08);
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+}
+
+.hero-cta {
+    display: flex;
+    justify-content: center;
+}
+
+/* ── Project Counter ── */
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 16px 28px;
+    border: 2px solid var(--frame);
+    background: rgba(27, 38, 59, 0.35);
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.5;
+}
+
+.stat-number {
+    font-family: var(--font-pixel);
+    font-size: 28px;
+    color: var(--accent);
+    text-shadow: 0 0 16px rgba(0, 229, 255, 0.4);
+    letter-spacing: 2px;
+}
+
+.stat-label {
+    font-family: var(--font-pixel);
+    font-size: 6px;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+.cta-btn {
+    font-family: var(--font-pixel);
+    font-size: 9px;
+    color: var(--accent);
+    border: 2px solid var(--accent-dim);
+    padding: 14px 28px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.3s var(--ease);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.12), transparent);
+}
+
+.cta-btn:hover {
+    border-color: var(--accent);
+    background: rgba(0, 229, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.cta-btn:hover::after {
+    animation: shimmer 0.6s forwards;
+}
+
+/* ===== Scroll targets (align below fixed nav) ===== */
+
+#hero,
+.section {
+    scroll-margin-top: var(--nav-height);
+}
+
+/* ===== Sections ===== */
+
+.section {
+    padding: var(--section-gap) 20px;
+}
+
+.section-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+}
+
+/* ===== Footer ===== */
+
+.footer {
+    padding: 32px 20px;
+    border-top: 2px solid var(--frame);
+    text-align: center;
+    margin-top: var(--section-gap);
+}
+
+.footer-text {
+    font-family: var(--font-pixel);
+    font-size: 7px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+}
+
+/* ===== Animations ===== */
+
+@keyframes shimmer {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 85vh;
+        padding: 80px 16px 40px;
+    }
+
+    .hero-greeting {
+        font-size: 22px;
+    }
+
+    .hero-name {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .hero-tagline {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    .cta-btn {
+        font-size: 8px;
+        padding: 12px 20px;
+    }
+
+    .section {
+        padding: 32px 12px;
+    }
+
+    .footer-text {
+        font-size: 6px;
+    }
+}

@@ -45,6 +45,17 @@
     opacity: 1;
 }
 
+/* ── Card link (clickable area → detail) ── */
+
+.card-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* ── Logo ── */
 
 .card-logo-wrap {
@@ -185,7 +196,7 @@
 /* ===== Small Mobile ===== */
 
 @media (max-width: 350px) {
-    .app-card {
+    .card-link {
         flex-direction: row;
         align-items: stretch;
     }

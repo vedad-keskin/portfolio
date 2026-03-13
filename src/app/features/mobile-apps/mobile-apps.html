@@ -2,23 +2,26 @@
     @for (app of apps; track app.id) {
     <div class="app-card" [id]="'app-' + app.id">
 
-        <!-- Logo -->
-        <div class="card-logo-wrap">
-            <img [src]="app.logoPath" [alt]="app.name + ' logo'" class="card-logo" loading="lazy" />
-        </div>
-
-        <!-- Info -->
-        <div class="card-body">
-            <h3 class="card-title">{{ app.name }}</h3>
-            <p class="card-desc">{{ ls.t(app.descriptionKey) }}</p>
-            <div class="card-tags">
-                @for (tag of app.tags; track tag) {
-                <span class="tag">{{ tag }}</span>
-                }
+        <!-- Clickable area → detail page -->
+        <a class="card-link" [routerLink]="['/project', app.id]">
+            <!-- Logo -->
+            <div class="card-logo-wrap">
+                <img [src]="app.logoPath" [alt]="app.name + ' logo'" class="card-logo" loading="lazy" />
             </div>
-        </div>
 
-        <!-- Download button -->
+            <!-- Info -->
+            <div class="card-body">
+                <h3 class="card-title">{{ app.name }}</h3>
+                <p class="card-desc">{{ ls.t(app.descriptionKey) }}</p>
+                <div class="card-tags">
+                    @for (tag of app.tags; track tag) {
+                    <span class="tag">{{ tag }}</span>
+                    }
+                </div>
+            </div>
+        </a>
+
+        <!-- Download button (external link, stays separate) -->
         <a class="card-download" [href]="app.downloadUrl || app.url" target="_blank" rel="noopener noreferrer">
             <span class="download-icon">⬇</span>
             <span class="download-text">{{ ls.t('download_btn_apk') }}</span>
