@@ -1,4 +1,5 @@
 import { Component, inject, signal, OnInit } from '@angular/core';
+import { NgClass } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Project } from '../../core/models/project.model';
@@ -8,7 +9,7 @@ import { LanguageService } from '../../shared/language/language.service';
 @Component({
     selector: 'app-project-detail',
     standalone: true,
-    imports: [RouterLink],
+    imports: [RouterLink, NgClass],
     templateUrl: './project-detail.html',
     styleUrl: './project-detail.css',
 })
@@ -28,10 +29,14 @@ export class ProjectDetailComponent implements OnInit {
 
     get categoryLabel(): string {
         const cat = this.project()?.category;
-        if (cat === 'web') return '🌐 WEB';
-        if (cat === 'mobile') return '📱 MOBILE';
-        if (cat === 'desktop') return '🖥️ DESKTOP';
+        if (cat === 'web') return 'WEB';
+        if (cat === 'mobile') return 'MOBILE';
+        if (cat === 'desktop') return 'DESKTOP';
         return '';
+    }
+
+    get categoryClass(): string {
+        return `detail__category--${this.project()?.category ?? 'web'}`;
     }
 
     get actionUrl(): string {
@@ -41,8 +46,9 @@ export class ProjectDetailComponent implements OnInit {
 
     get actionLabel(): string {
         const p = this.project();
-        if (p?.downloadUrl) return this.ls.t('detail_download');
-        return this.ls.t('detail_visit');
+        if (!p?.downloadUrl) return this.ls.t('visit_btn');
+        if (p.category === 'desktop') return this.ls.t('download_btn_exe');
+        return this.ls.t('download_btn_apk');
     }
 
     wakeBackend(): void {

@@ -18,27 +18,55 @@
 
 .detail__top {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
 }
+
+/* ── Back button ── */
 
 .detail__back {
     font-family: var(--font-pixel);
-    font-size: 9px;
-    color: var(--text-dim);
+    font-size: 10px;
+    color: var(--accent);
     text-decoration: none;
     letter-spacing: 2px;
-    padding: 10px 16px;
-    border: 2px solid var(--frame);
+    padding: 11px 18px;
+    border: 2px solid var(--accent-dim);
+    background: rgba(0, 229, 255, 0.08);
     transition: all 0.25s var(--ease);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
 }
 
+
 .detail__back:hover {
-    color: var(--accent);
     border-color: var(--accent);
-    background: rgba(0, 229, 255, 0.08);
+    background: rgba(0, 229, 255, 0.16);
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.2);
 }
+
+/* ===== Category badge (top-right) ===== */
+
+.detail__category {
+    font-family: var(--font-pixel);
+    font-size: 7px;
+    color: var(--bg-deep);
+    padding: 7px 16px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* color variants — background only on the badge itself */
+.detail__category.detail__category--web     { background: var(--accent); }
+.detail__category.detail__category--mobile  { background: var(--accent-amber); }
+.detail__category.detail__category--desktop { background: var(--accent-green); }
 
 /* ===== Hero logo ===== */
 
@@ -47,22 +75,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+    width: 100%;
 }
 
 .detail__logo-wrap {
-    width: 160px;
-    height: 160px;
+    width: 220px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(13, 27, 42, 0.8);
+    background: rgba(13, 27, 42, 0.85);
     border: 3px solid var(--frame);
     overflow: hidden;
-    padding: 24px;
+    padding: 28px;
     position: relative;
     z-index: 2;
+    transition: border-color 0.3s var(--ease);
 }
+
+/* logo border color per category */
+.detail__logo-wrap.detail__category--web     { border-color: var(--accent-dim);          }
+.detail__logo-wrap.detail__category--mobile  { border-color: rgba(255, 215, 64, 0.4);    }
+.detail__logo-wrap.detail__category--desktop { border-color: rgba(0,   230, 118, 0.4);   }
 
 .detail__logo {
     max-width: 100%;
@@ -70,19 +105,29 @@
     object-fit: contain;
 }
 
+/* glow per category */
 .detail__glow {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(0, 229, 255, 0.15) 0%, transparent 70%);
     z-index: 1;
     animation: pulse-glow 3s ease-in-out infinite;
 }
 
+.detail__glow.detail__category--web {
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.18) 0%, transparent 70%);
+}
+.detail__glow.detail__category--mobile {
+    background: radial-gradient(circle, rgba(255, 215, 64, 0.18) 0%, transparent 70%);
+}
+.detail__glow.detail__category--desktop {
+    background: radial-gradient(circle, rgba(0, 230, 118, 0.18) 0%, transparent 70%);
+}
+
 @keyframes pulse-glow {
-    0%, 100% { transform: scale(1); opacity: 0.6; }
-    50% { transform: scale(1.15); opacity: 1; }
+    0%, 100% { transform: scale(1);    opacity: 0.6; }
+    50%       { transform: scale(1.15); opacity: 1;   }
 }
 
 /* ===== Name ===== */
@@ -90,25 +135,17 @@
 .detail__name {
     font-family: var(--font-pixel);
     font-size: 18px;
-    color: var(--accent);
     text-shadow: 0 0 24px rgba(0, 229, 255, 0.3);
     letter-spacing: 3px;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     line-height: 1.6;
 }
 
-/* ===== Category badge ===== */
-
-.detail__category {
-    font-family: var(--font-pixel);
-    font-size: 7px;
-    color: var(--bg-deep);
-    background: var(--accent);
-    padding: 5px 14px;
-    letter-spacing: 2px;
-    margin-bottom: 24px;
-}
+/* name color only — no background */
+.detail__name.detail__category--web     { color: var(--accent);      text-shadow: 0 0 24px rgba(0,   229, 255, 0.3); }
+.detail__name.detail__category--mobile  { color: var(--accent-amber); text-shadow: 0 0 24px rgba(255, 215,  64, 0.3); }
+.detail__name.detail__category--desktop { color: var(--accent-green); text-shadow: 0 0 24px rgba(0,   230, 118, 0.3); }
 
 /* ===== Description ===== */
 
@@ -174,17 +211,6 @@
     gap: 12px;
 }
 
-.detail__backend-url {
-    font-family: var(--font-pixel);
-    font-size: 6px;
-    color: var(--frame-light);
-    letter-spacing: 0.5px;
-    word-break: break-all;
-    padding: 10px 14px;
-    background: rgba(13, 27, 42, 0.6);
-    border: 1px solid var(--frame);
-}
-
 .detail__wake-btn {
     font-family: var(--font-pixel);
     font-size: 8px;
@@ -241,8 +267,7 @@
     font-family: var(--font-pixel);
     font-size: 10px;
     color: var(--bg-deep);
-    background: var(--accent);
-    padding: 16px 28px;
+    padding: 18px 28px;
     letter-spacing: 3px;
     text-decoration: none;
     border: none;
@@ -250,6 +275,25 @@
     position: relative;
     overflow: hidden;
     -webkit-tap-highlight-color: transparent;
+}
+
+/* action button — background + hover per category */
+.detail__action-btn.detail__category--web     { background: var(--accent); }
+.detail__action-btn.detail__category--web:hover {
+    box-shadow: 0 0 28px rgba(0, 229, 255, 0.45), 0 4px 0 rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.detail__action-btn.detail__category--mobile  { background: var(--accent-amber); }
+.detail__action-btn.detail__category--mobile:hover {
+    box-shadow: 0 0 28px rgba(255, 215, 64, 0.45), 0 4px 0 rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.detail__action-btn.detail__category--desktop { background: var(--accent-green); }
+.detail__action-btn.detail__category--desktop:hover {
+    box-shadow: 0 0 28px rgba(0, 230, 118, 0.45), 0 4px 0 rgba(0,0,0,0.3);
+    transform: translateY(-2px);
 }
 
 .detail__action-btn::after {
@@ -262,19 +306,13 @@
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
 }
 
-.detail__action-btn:hover {
-    background: var(--accent);
-    box-shadow: 0 0 28px rgba(0, 229, 255, 0.4), 0 4px 0 rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-}
-
 .detail__action-btn:hover::after {
     animation: shimmer 0.6s forwards;
 }
 
 @keyframes shimmer {
     from { left: -100%; }
-    to { left: 100%; }
+    to   { left:  100%; }
 }
 
 /* ===== Footer ===== */
@@ -337,28 +375,34 @@
     }
 
     .detail__back {
-        font-size: 8px;
-        padding: 8px 12px;
+        font-size: 9px;
+        padding: 10px 14px;
+        gap: 6px;
+    }
+
+    .detail__back-arrow {
+        font-size: 13px;
+    }
+
+    .detail__category {
+        font-size: 6px;
+        padding: 6px 12px;
     }
 
     .detail__logo-wrap {
-        width: 130px;
-        height: 130px;
-        padding: 20px;
+        width: 180px;
+        height: 180px;
+        padding: 22px;
     }
 
     .detail__glow {
-        width: 170px;
-        height: 170px;
+        width: 230px;
+        height: 230px;
     }
 
     .detail__name {
         font-size: 14px;
         letter-spacing: 2px;
-    }
-
-    .detail__category {
-        font-size: 6px;
     }
 
     .detail__desc {
@@ -374,10 +418,6 @@
         padding: 5px 10px;
     }
 
-    .detail__backend-url {
-        font-size: 5px;
-    }
-
     .detail__wake-btn {
         font-size: 7px;
         padding: 10px 16px;
@@ -385,7 +425,7 @@
 
     .detail__action-btn {
         font-size: 9px;
-        padding: 14px 20px;
+        padding: 15px 20px;
     }
 
     .detail__footer-text {
@@ -395,14 +435,14 @@
 
 @media (max-width: 350px) {
     .detail__logo-wrap {
-        width: 110px;
-        height: 110px;
-        padding: 16px;
+        width: 150px;
+        height: 150px;
+        padding: 18px;
     }
 
     .detail__glow {
-        width: 140px;
-        height: 140px;
+        width: 190px;
+        height: 190px;
     }
 
     .detail__name {

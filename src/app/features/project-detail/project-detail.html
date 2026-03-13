@@ -1,23 +1,21 @@
 @if (project(); as p) {
 <div class="detail">
-    <!-- Top bar -->
+    <!-- Top bar: back + category badge -->
     <div class="detail__top">
         <a class="detail__back" routerLink="/">{{ ls.t('detail_back') }}</a>
+        <span class="detail__category" [ngClass]="categoryClass">{{ categoryLabel }}</span>
     </div>
 
-    <!-- Hero card -->
+    <!-- Hero logo -->
     <div class="detail__hero">
-        <div class="detail__logo-wrap">
+        <div class="detail__logo-wrap" [ngClass]="categoryClass">
             <img [src]="p.logoPath" [alt]="p.name + ' logo'" class="detail__logo" />
         </div>
-        <div class="detail__glow"></div>
+        <div class="detail__glow" [ngClass]="categoryClass"></div>
     </div>
 
     <!-- Title -->
-    <h1 class="detail__name">{{ p.name }}</h1>
-
-    <!-- Category badge -->
-    <span class="detail__category">{{ categoryLabel }}</span>
+    <h1 class="detail__name" [ngClass]="categoryClass">{{ p.name }}</h1>
 
     <!-- Description -->
     <p class="detail__desc">{{ ls.t(p.descriptionKey) }}</p>
@@ -37,7 +35,6 @@
     <div class="detail__section">
         <h2 class="detail__section-title">{{ ls.t('detail_backend') }}</h2>
         <div class="detail__backend">
-            <span class="detail__backend-url">{{ p.backendUrl }}</span>
             <button class="detail__wake-btn"
                 [class.waking]="wakeStatus() === 'waking'"
                 [class.done]="wakeStatus() === 'done'"
@@ -56,7 +53,7 @@
 
     <!-- Primary action -->
     <div class="detail__actions">
-        <a class="detail__action-btn" [href]="actionUrl" target="_blank" rel="noopener noreferrer">
+        <a class="detail__action-btn" [ngClass]="categoryClass" [href]="actionUrl" target="_blank" rel="noopener noreferrer">
             {{ actionLabel }}
         </a>
     </div>
