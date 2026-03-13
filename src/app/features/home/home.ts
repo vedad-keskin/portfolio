@@ -26,4 +26,11 @@ export class HomeComponent {
     readonly ls = inject(LanguageService);
     readonly techStack = [...new Set([...WEB_PROJECTS, ...MOBILE_APPS, ...DESKTOP_APPS].flatMap(p => p.tags))];
     readonly projectCount = WEB_PROJECTS.length + MOBILE_APPS.length + DESKTOP_APPS.length;
+
+    scrollTo(id: string): void {
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
 }

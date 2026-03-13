@@ -136,9 +136,12 @@
     padding: 14px 28px;
     letter-spacing: 2px;
     text-decoration: none;
+    background: transparent;
+    cursor: pointer;
     transition: all 0.3s var(--ease);
     position: relative;
     overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .cta-btn::after {
