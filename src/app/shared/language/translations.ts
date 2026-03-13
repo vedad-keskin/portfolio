@@ -40,10 +40,10 @@ export type TranslationKey =
 
 // ── English ─────────────────────────────────────────────────────────────
 export const EN: Record<TranslationKey, string> = {
-    nav_services: '⚡ SERVICES',
-    nav_web: '🌐 WEB APPS',
-    nav_mobile: '📱 MOBILE',
-    nav_desktop: '🖥️ DESKTOP',
+    nav_services: 'SERVICES',
+    nav_web: 'WEB APPS',
+    nav_mobile: 'MOBILE',
+    nav_desktop: 'DESKTOP',
     nav_soon: 'SOON',
 
     hero_greeting: "Hi, I'm",
@@ -102,7 +102,7 @@ export const EN: Record<TranslationKey, string> = {
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
-    detail_back: '← BACK',
+    detail_back: 'BACK',
     detail_visit: 'VISIT LIVE SITE →',
     detail_download: 'DOWNLOAD →',
     detail_tech: 'TECH STACK',
@@ -117,10 +117,10 @@ export const EN: Record<TranslationKey, string> = {
 
 // ── Bosnian ──────────────────────────────────────────────────────────────
 export const BS: Record<TranslationKey, string> = {
-    nav_services: '⚡ SERVISI',
-    nav_web: '🌐 WEB APPS',
-    nav_mobile: '📱 MOBILNE',
-    nav_desktop: '🖥️ DESKTOP',
+    nav_services: 'SERVISI',
+    nav_web: 'WEB APPS',
+    nav_mobile: 'MOBILNE',
+    nav_desktop: 'DESKTOP',
     nav_soon: 'USKORO',
 
     hero_greeting: 'Hej, ja sam',
@@ -179,7 +179,7 @@ export const BS: Record<TranslationKey, string> = {
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
 
-    detail_back: '← NAZAD',
+    detail_back: 'NAZAD',
     detail_visit: 'POSJETI STRANICU →',
     detail_download: 'PREUZMI →',
     detail_tech: 'TEHNOLOGIJE',

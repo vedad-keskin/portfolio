@@ -30,25 +30,60 @@
 .detail__back {
     font-family: var(--font-pixel);
     font-size: 10px;
-    color: var(--accent);
     text-decoration: none;
     letter-spacing: 2px;
     padding: 11px 18px;
-    border: 2px solid var(--accent-dim);
-    background: rgba(0, 229, 255, 0.08);
     transition: all 0.25s var(--ease);
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     -webkit-tap-highlight-color: transparent;
     white-space: nowrap;
 }
 
+.detail__back-arrow {
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+}
 
-.detail__back:hover {
+/* back button — web (cyan) */
+.detail__back.detail__category--web {
+    color: var(--accent);
+    border: 2px solid var(--accent-dim);
+    background: rgba(0, 229, 255, 0.08);
+}
+.detail__back.detail__category--web:hover {
     border-color: var(--accent);
     background: rgba(0, 229, 255, 0.16);
     box-shadow: 0 0 12px rgba(0, 229, 255, 0.2);
+}
+
+/* back button — mobile (amber) */
+.detail__back.detail__category--mobile {
+    color: var(--accent-amber);
+    border: 2px solid rgba(255, 215, 64, 0.4);
+    background: rgba(255, 215, 64, 0.08);
+}
+.detail__back.detail__category--mobile:hover {
+    border-color: var(--accent-amber);
+    background: rgba(255, 215, 64, 0.16);
+    box-shadow: 0 0 12px rgba(255, 215, 64, 0.2);
+}
+
+/* back button — desktop (green) */
+.detail__back.detail__category--desktop {
+    color: var(--accent-green);
+    border: 2px solid rgba(0, 230, 118, 0.4);
+    background: rgba(0, 230, 118, 0.08);
+}
+.detail__back.detail__category--desktop:hover {
+    border-color: var(--accent-green);
+    background: rgba(0, 230, 118, 0.16);
+    box-shadow: 0 0 12px rgba(0, 230, 118, 0.2);
 }
 
 /* ===== Category badge (top-right) ===== */
@@ -377,11 +412,12 @@
     .detail__back {
         font-size: 9px;
         padding: 10px 14px;
-        gap: 6px;
+        gap: 8px;
     }
 
     .detail__back-arrow {
-        font-size: 13px;
+        width: 6px;
+        height: 6px;
     }
 
     .detail__category {

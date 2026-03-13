@@ -2,7 +2,10 @@
 <div class="detail">
     <!-- Top bar: back + category badge -->
     <div class="detail__top">
-        <a class="detail__back" routerLink="/">{{ ls.t('detail_back') }}</a>
+        <a class="detail__back" [ngClass]="categoryClass" routerLink="/">
+            <span class="detail__back-arrow"></span>
+            {{ ls.t('detail_back') }}
+        </a>
         <span class="detail__category" [ngClass]="categoryClass">{{ categoryLabel }}</span>
     </div>
 
@@ -66,7 +69,10 @@
 } @else {
 <div class="detail detail--empty">
     <div class="detail__top">
-        <a class="detail__back" routerLink="/">{{ ls.t('detail_back') }}</a>
+        <a class="detail__back" routerLink="/">
+            <span class="detail__back-arrow"></span>
+            {{ ls.t('detail_back') }}
+        </a>
     </div>
     <div class="detail__not-found">
         <span class="nf-icon">?</span>
