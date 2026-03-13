@@ -23,6 +23,7 @@ export class ProjectDetailComponent implements OnInit {
     wakeStatus = signal<'idle' | 'waking' | 'done' | 'error'>('idle');
 
     ngOnInit(): void {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
         const id = this.route.snapshot.paramMap.get('id') ?? '';
         this.project.set(this.lookup.findById(id));
     }
