@@ -1,5 +1,4 @@
-import { Component, ElementRef, OnDestroy, inject, afterNextRender } from '@angular/core';
-import { ThemeService } from '../../theme/theme.service';
+import { Component, ElementRef, OnInit, OnDestroy, afterNextRender } from '@angular/core';
 
 interface Star {
     x: number;
@@ -33,7 +32,6 @@ interface Star {
   `],
 })
 export class StarfieldComponent implements OnDestroy {
-    private readonly themeService = inject(ThemeService);
     private canvas!: HTMLCanvasElement;
     private ctx!: CanvasRenderingContext2D;
     private stars: Star[] = [];
@@ -81,28 +79,24 @@ export class StarfieldComponent implements OnDestroy {
     private animate = (): void => {
         const w = window.innerWidth;
         const h = window.innerHeight;
-        const isDay = this.themeService.theme() === 'day';
 
         this.ctx.clearRect(0, 0, w, h);
 
         for (const star of this.stars) {
             star.twinklePhase += star.twinkleSpeed;
             const flicker = Math.sin(star.twinklePhase) * 0.3 + 0.7;
-            const alpha = star.opacity * flicker * (isDay ? 0.35 : 1);
+            const alpha = star.opacity * flicker;
 
             this.ctx.beginPath();
             this.ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-            this.ctx.fillStyle = isDay
-                ? `rgba(100, 120, 150, ${alpha})`
-                : `rgba(224, 225, 221, ${alpha})`;
+            this.ctx.fillStyle = `rgba(224, 225, 221, ${alpha})`;
             this.ctx.fill();
 
+            // subtle glow on brighter stars
             if (star.size > 1.2) {
                 this.ctx.beginPath();
                 this.ctx.arc(star.x, star.y, star.size * 2.5, 0, Math.PI * 2);
-                this.ctx.fillStyle = isDay
-                    ? `rgba(0, 100, 160, ${alpha * 0.06})`
-                    : `rgba(0, 229, 255, ${alpha * 0.08})`;
+                this.ctx.fillStyle = `rgba(0, 229, 255, ${alpha * 0.08})`;
                 this.ctx.fill();
             }
 

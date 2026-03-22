@@ -11,9 +11,9 @@
 }
 
 .ls-outer {
-    background: rgba(var(--shadow-rgb), 0.6);
+    background: rgba(0, 0, 0, 0.6);
     padding: 3px;
-    box-shadow: 4px 4px 0 rgba(var(--shadow-rgb), 0.35);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
     width: 80px;
     height: 36px;
 }
@@ -75,7 +75,7 @@
 }
 
 .lang-switch:hover .ls-outer {
-    box-shadow: 4px 4px 0 rgba(var(--shadow-rgb), 0.5);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .lang-switch:hover .ls-inner {

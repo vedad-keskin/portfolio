@@ -13,7 +13,7 @@
 .app-card {
     display: flex;
     flex-direction: column;
-    background: rgba(var(--bg-mid-rgb), 0.6);
+    background: rgba(27, 38, 59, 0.6);
     border: 2px solid var(--frame);
     color: var(--text);
     overflow: hidden;
@@ -26,7 +26,7 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg,
-            rgba(var(--accent-amber-rgb), 0.06) 0%,
+            rgba(255, 176, 46, 0.06) 0%,
             transparent 50%);
     opacity: 0;
     transition: opacity 0.35s var(--ease);
@@ -36,8 +36,8 @@
 .app-card:hover {
     border-color: var(--accent-amber);
     box-shadow:
-        0 0 20px rgba(var(--accent-amber-rgb), 0.12),
-        4px 4px 0 rgba(var(--shadow-rgb), 0.3);
+        0 0 20px rgba(255, 176, 46, 0.12),
+        4px 4px 0 rgba(0, 0, 0, 0.3);
     transform: translateY(-4px);
 }
 
@@ -64,7 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(var(--bg-deep-rgb), 0.8);
+    background: rgba(13, 27, 42, 0.8);
     border-bottom: 2px solid var(--frame);
     overflow: hidden;
     padding: 20px;
@@ -96,7 +96,7 @@
     font-size: 11px;
     color: var(--accent-amber);
     letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(var(--accent-amber-rgb), 0.25);
+    text-shadow: 0 0 10px rgba(255, 176, 46, 0.25);
 }
 
 .card-desc {
@@ -128,7 +128,7 @@
 }
 
 .app-card:hover .tag {
-    border-color: rgba(var(--accent-amber-rgb), 0.4);
+    border-color: rgba(255, 176, 46, 0.4);
     color: var(--accent-amber);
 }
 
@@ -141,7 +141,7 @@
     gap: 10px;
     padding: 14px;
     border-top: 2px solid var(--frame);
-    background: rgba(var(--bg-deep-rgb), 0.4);
+    background: rgba(13, 27, 42, 0.4);
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s var(--ease);
@@ -162,8 +162,8 @@
 }
 
 .app-card:hover .card-download {
-    background: rgba(var(--accent-amber-rgb), 0.08);
-    border-top-color: rgba(var(--accent-amber-rgb), 0.4);
+    background: rgba(255, 176, 46, 0.08);
+    border-top-color: rgba(255, 176, 46, 0.4);
 }
 
 .app-card:hover .download-text {

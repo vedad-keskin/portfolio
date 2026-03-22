@@ -16,21 +16,6 @@
   --accent-red:    #FF1744;
   --black:         #000000;
 
-  /* RGB channels for rgba() usage */
-  --bg-deep-rgb:       13, 27, 42;
-  --bg-mid-rgb:        27, 38, 59;
-  --frame-rgb:         65, 90, 119;
-  --frame-light-rgb:   119, 141, 169;
-  --text-rgb:          224, 225, 221;
-  --text-dim-rgb:      160, 164, 168;
-  --accent-rgb:        0, 229, 255;
-  --accent-dim-rgb:    0, 151, 167;
-  --accent-green-rgb:  0, 230, 118;
-  --accent-amber-rgb:  255, 215, 64;
-  --accent-red-rgb:    255, 23, 68;
-  --shadow-rgb:        0, 0, 0;
-  --badge-text:        #0D1B2A;
-
   /* Fonts */
   --font-pixel:  'Press Start 2P', monospace;
   --font-body:   'VT323', monospace;
@@ -42,37 +27,6 @@
 
   /* Transitions */
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* ===== Day Theme ===== */
-
-body.day {
-  --bg-deep:       #E8ECF2;
-  --bg-mid:        #D4DBE5;
-  --bg-card:       #D4DBE5;
-  --frame:         #A8B8CA;
-  --frame-light:   #7E92A8;
-  --text:          #1B2838;
-  --text-dim:      #556878;
-  --accent:        #0088BB;
-  --accent-dim:    #006690;
-  --accent-green:  #00A556;
-  --accent-amber:  #C89000;
-  --accent-red:    #DD2040;
-
-  --bg-deep-rgb:       232, 236, 242;
-  --bg-mid-rgb:        212, 219, 229;
-  --frame-rgb:         168, 184, 202;
-  --frame-light-rgb:   126, 146, 168;
-  --text-rgb:          27, 40, 56;
-  --text-dim-rgb:      85, 104, 120;
-  --accent-rgb:        0, 136, 187;
-  --accent-dim-rgb:    0, 102, 144;
-  --accent-green-rgb:  0, 165, 86;
-  --accent-amber-rgb:  200, 144, 0;
-  --accent-red-rgb:    221, 32, 64;
-  --shadow-rgb:        100, 116, 139;
-  --badge-text:        #1B2838;
 }
 
 *, *::before, *::after {
@@ -95,7 +49,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 a {
@@ -134,5 +87,5 @@ img {
 /* Utility */
 .pixel-border {
   border: 3px solid var(--frame);
-  box-shadow: 4px 4px 0 rgba(var(--shadow-rgb), 0.4);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
 }

@@ -5,7 +5,7 @@
 /* ===== Panel ===== */
 
 .wake-panel {
-    background: rgba(var(--bg-mid-rgb), 0.5);
+    background: rgba(27, 38, 59, 0.5);
     border: 2px solid var(--frame);
     padding: 24px;
     position: relative;
@@ -39,7 +39,7 @@
     font-size: 10px;
     letter-spacing: 2px;
     padding: 14px 28px;
-    background: rgba(var(--accent-rgb), 0.08);
+    background: rgba(0, 229, 255, 0.08);
     color: var(--accent);
     border: 2px solid var(--accent-dim);
     cursor: pointer;
@@ -55,7 +55,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(var(--accent-rgb), 0.15), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.15), transparent);
     transition: left 0.5s;
 }
 
@@ -64,9 +64,9 @@
 }
 
 .wake-btn:hover:not(:disabled) {
-    background: rgba(var(--accent-rgb), 0.15);
+    background: rgba(0, 229, 255, 0.15);
     border-color: var(--accent);
-    box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.2);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
     transform: translateY(-2px);
 }
 
@@ -77,15 +77,15 @@
 .wake-btn.waking {
     border-color: var(--accent-amber);
     color: var(--accent-amber);
-    background: rgba(var(--accent-amber-rgb), 0.08);
+    background: rgba(255, 215, 64, 0.08);
     animation: borderPulse 1.5s infinite;
 }
 
 .wake-btn.done {
     border-color: var(--accent-green);
     color: var(--accent-green);
-    background: rgba(var(--accent-green-rgb), 0.08);
-    box-shadow: 0 0 24px rgba(var(--accent-green-rgb), 0.15);
+    background: rgba(0, 230, 118, 0.08);
+    box-shadow: 0 0 24px rgba(0, 230, 118, 0.15);
 }
 
 .btn-icon {
@@ -105,7 +105,7 @@
 .progress-track {
     width: 100%;
     height: 20px;
-    background: rgba(var(--bg-deep-rgb), 0.8);
+    background: rgba(13, 27, 42, 0.8);
     border: 2px solid var(--frame);
     margin-bottom: 20px;
     position: relative;
@@ -135,7 +135,7 @@
 
 .progress-fill.complete {
     background: linear-gradient(90deg, var(--accent-green), #69F0AE);
-    box-shadow: 0 0 12px rgba(var(--accent-green-rgb), 0.4);
+    box-shadow: 0 0 12px rgba(0, 230, 118, 0.4);
 }
 
 .progress-label {
@@ -146,7 +146,7 @@
     font-family: var(--font-pixel);
     font-size: 7px;
     color: var(--text);
-    text-shadow: 1px 1px 0 rgba(var(--shadow-rgb), 0.8);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
     letter-spacing: 1px;
     z-index: 1;
 }
@@ -164,7 +164,7 @@
     align-items: center;
     gap: 14px;
     padding: 12px 16px;
-    background: rgba(var(--bg-deep-rgb), 0.6);
+    background: rgba(13, 27, 42, 0.6);
     border: 2px solid var(--frame);
     cursor: pointer;
     transition: all 0.3s var(--ease);
@@ -172,19 +172,19 @@
 
 .service-row:hover {
     border-color: var(--frame-light);
-    background: rgba(var(--bg-deep-rgb), 0.8);
+    background: rgba(13, 27, 42, 0.8);
 }
 
 .service-row.status-awake {
-    border-color: rgba(var(--accent-green-rgb), 0.4);
+    border-color: rgba(0, 230, 118, 0.4);
 }
 
 .service-row.status-waking {
-    border-color: rgba(var(--accent-amber-rgb), 0.4);
+    border-color: rgba(255, 215, 64, 0.4);
 }
 
 .service-row.status-error {
-    border-color: rgba(var(--accent-red-rgb), 0.4);
+    border-color: rgba(255, 23, 68, 0.4);
 }
 
 /* ── Status Dot ── */
@@ -209,7 +209,7 @@
 }
 
 .status-dot.sleeping {
-    background: rgba(var(--text-dim-rgb), 0.2);
+    background: rgba(160, 164, 168, 0.2);
     border: 2px solid var(--text-dim);
 }
 
@@ -221,7 +221,7 @@
 }
 
 .status-dot.waking {
-    background: rgba(var(--accent-amber-rgb), 0.2);
+    background: rgba(255, 215, 64, 0.2);
     border: 2px solid var(--accent-amber);
     animation: dotPulse 1s ease-in-out infinite;
 }
@@ -235,9 +235,9 @@
 }
 
 .status-dot.awake {
-    background: rgba(var(--accent-green-rgb), 0.2);
+    background: rgba(0, 230, 118, 0.2);
     border: 2px solid var(--accent-green);
-    box-shadow: 0 0 10px rgba(var(--accent-green-rgb), 0.3);
+    box-shadow: 0 0 10px rgba(0, 230, 118, 0.3);
 }
 
 .check {
@@ -248,7 +248,7 @@
 }
 
 .status-dot.error {
-    background: rgba(var(--accent-red-rgb), 0.2);
+    background: rgba(255, 23, 68, 0.2);
     border: 2px solid var(--accent-red);
     animation: shake 0.5s;
 }
@@ -303,7 +303,7 @@
     font-family: var(--font-pixel);
     font-size: 7px;
     padding: 6px 12px;
-    background: rgba(var(--accent-rgb), 0.08);
+    background: rgba(0, 229, 255, 0.08);
     color: var(--accent);
     border: 2px solid var(--frame);
     cursor: pointer;
@@ -314,7 +314,7 @@
 
 .ping-btn:hover:not(:disabled) {
     border-color: var(--accent);
-    background: rgba(var(--accent-rgb), 0.15);
+    background: rgba(0, 229, 255, 0.15);
 }
 
 .ping-btn:disabled {
@@ -437,11 +437,11 @@
 
     0%,
     100% {
-        box-shadow: 0 0 0 rgba(var(--accent-amber-rgb), 0);
+        box-shadow: 0 0 0 rgba(255, 215, 64, 0);
     }
 
     50% {
-        box-shadow: 0 0 16px rgba(var(--accent-amber-rgb), 0.25);
+        box-shadow: 0 0 16px rgba(255, 215, 64, 0.25);
     }
 }
 

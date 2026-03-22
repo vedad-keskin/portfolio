@@ -22,7 +22,7 @@
     font-family: var(--font-pixel);
     font-size: 14px;
     color: var(--accent);
-    text-shadow: 0 0 20px rgba(var(--accent-rgb), 0.3);
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
     letter-spacing: 3px;
     text-transform: uppercase;
     white-space: nowrap;
