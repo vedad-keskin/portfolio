@@ -7,7 +7,8 @@
 .detail {
     max-width: 600px;
     margin: 0 auto;
-    padding: calc(var(--nav-height) + 24px) 16px 48px;
+    /* Match .nav-inner / .section horizontal padding so header aligns with home */
+    padding: calc(var(--nav-height) + 24px) 20px 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,6 +401,15 @@
     font-family: var(--font-body);
     font-size: 22px;
     color: var(--text-dim);
+}
+
+/* ===== Tablet: match .nav-inner padding (16px) ===== */
+
+@media (max-width: 768px) {
+    .detail {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 /* ===== Mobile ===== */

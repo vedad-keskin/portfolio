@@ -38,6 +38,8 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  /* Keeps nav / centered content aligned when scrollbar appears (home) vs not (detail) */
+  scrollbar-gutter: stable;
 }
 
 body {
