@@ -1,12 +1,13 @@
 import { Component, signal, inject, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { LangSwitchComponent } from '../lang-switch/lang-switch';
+import { ThemeSwitchComponent } from '../theme-switch/theme-switch';
 import { LanguageService } from '../../language/language.service';
 
 @Component({
     selector: 'app-nav',
     standalone: true,
-    imports: [LangSwitchComponent],
+    imports: [LangSwitchComponent, ThemeSwitchComponent],
     templateUrl: './nav.html',
     styleUrl: './nav.css',
 })
