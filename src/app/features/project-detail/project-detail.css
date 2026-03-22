@@ -42,8 +42,8 @@
 }
 
 .detail__back-arrow {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border-left: 2px solid currentColor;
     border-bottom: 2px solid currentColor;
     transform: rotate(45deg);
@@ -416,8 +416,8 @@
     }
 
     .detail__back-arrow {
-        width: 6px;
-        height: 6px;
+        width: 5px;
+        height: 5px;
     }
 
     .detail__category {
