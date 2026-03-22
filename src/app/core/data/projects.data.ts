@@ -7,7 +7,7 @@ export const WEB_PROJECTS: Project[] = [
         descriptionKey: 'nightfall_desc',
         logoPath: 'assets/nightfall.png',
         url: 'https://nightfall-project.vercel.app',
-        tags: ['Angular', 'Rulebook', 'Vercel'],
+        tags: ['Angular', 'Rulebook', 'Vercel', 'Firebase'],
         category: 'web',
     },
     {

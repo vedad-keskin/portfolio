@@ -8,7 +8,7 @@ export const MOBILE_APPS: Project[] = [
         logoPath: 'assets/nightfall.png',
         url: 'https://github.com/vedad-keskin/app-releases/releases/download/nightfall-v4.3.3/nightfall.v4.3.3.apk',
         downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/nightfall-v4.3.3/nightfall.v4.3.3.apk',
-        tags: ['Android', 'Flutter', 'Game'],
+        tags: ['Android', 'Flutter', 'Game', 'Firebase'],
         category: 'mobile',
     },
     {
