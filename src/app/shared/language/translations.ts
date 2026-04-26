@@ -10,12 +10,11 @@ export type TranslationKey =
     | 'section_services_title' | 'section_services_subtitle'
     | 'section_web_title' | 'section_web_subtitle'
     | 'section_mobile_title' | 'section_mobile_subtitle'
+    | 'section_desktop_title' | 'section_desktop_subtitle'
     // Backend wake
     | 'wake_btn_idle' | 'wake_btn_waking' | 'wake_btn_done'
     | 'status_sleeping' | 'status_waking' | 'status_awake' | 'status_error'
     | 'wake_reset'
-    // Coming soon
-    | 'cs_desktop' | 'cs_soon'
     // Project descriptions
     | 'nightfall_desc' | 'kino_zona_desc' | 'majstor_ba_desc'
     | 'festify_desc' | 'bookhana_desc' | 'gms_desc'
@@ -56,10 +55,13 @@ export const EN: Record<TranslationKey, string> = {
     section_services_title: 'BACKEND SERVICES',
     section_services_subtitle: 'Wake up the free-tier Render backends before exploring the projects.',
     section_web_title: 'WEB APPS',
-    section_web_subtitle: 'Full-stack web applications built with Angular & .NET',
+    section_web_subtitle: 'Full-stack web applications',
 
     section_mobile_title: 'MOBILE APPS',
     section_mobile_subtitle: 'Cross-platform mobile games and applications',
+
+    section_desktop_title: 'DESKTOP APPS',
+    section_desktop_subtitle: 'Cross-platform desktop applications',
 
     wake_btn_idle: 'WAKE ALL SERVICES',
     wake_btn_waking: 'WAKING UP...',
@@ -70,8 +72,6 @@ export const EN: Record<TranslationKey, string> = {
     status_error: 'ERROR',
     wake_reset: '↺ RESET',
 
-    cs_desktop: 'DESKTOP APPS',
-    cs_soon: 'COMING SOON',
 
     nightfall_desc: 'A companion web rulebook for the Nightfall mobile game — explaining roles, rules, and gameplay mechanics.',
     kino_zona_desc: 'A cinema management platform for browsing movies, reserving tickets, and managing screenings.',
@@ -133,10 +133,13 @@ export const BS: Record<TranslationKey, string> = {
     section_services_title: 'BACKEND SERVISI',
     section_services_subtitle: 'Probudite besplatne Render backend servise prije istraživanja projekata.',
     section_web_title: 'WEB APLIKACIJE',
-    section_web_subtitle: 'Full-stack web aplikacije izgrađene sa Angular & .NET',
+    section_web_subtitle: 'Full-stack web aplikacije',
 
     section_mobile_title: 'MOBILNE APLIKACIJE',
     section_mobile_subtitle: 'Cross-platform mobilne igre i aplikacije',
+
+    section_desktop_title: 'DESKTOP APLIKACIJE',
+    section_desktop_subtitle: 'Cross-platform desktop aplikacije',
 
     wake_btn_idle: 'PROBUDI SVE SERVISE',
     wake_btn_waking: 'BUĐENJE...',
@@ -147,8 +150,6 @@ export const BS: Record<TranslationKey, string> = {
     status_error: 'GREŠKA',
     wake_reset: '↺ RESETUJ',
 
-    cs_desktop: 'DESKTOP APLIKACIJE',
-    cs_soon: 'USKORO',
 
     nightfall_desc: 'Web priručnik za Nightfall mobilnu igru — objašnjava uloge, pravila i mehanike igre.',
     kino_zona_desc: 'Platforma za upravljanje kinom — pretraživanje filmova, rezervacija karata i upravljanje projekcijama.',
