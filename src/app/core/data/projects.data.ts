@@ -60,4 +60,13 @@ export const WEB_PROJECTS: Project[] = [
         category: 'web',
         backendUrl: 'https://gym-management-system-gdin.onrender.com',
     },
+    {
+        id: 'vaktija',
+        name: 'Vaktija',
+        descriptionKey: 'vaktija_desc',
+        logoPath: 'assets/vaktija.png',
+        url: 'https://vaktija-bh.vercel.app/',
+        tags: ['Angular', 'Vercel'],
+        category: 'web',
+    },
 ];
