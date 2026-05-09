@@ -20,6 +20,7 @@ export type TranslationKey =
     | 'festify_desc' | 'bookhana_desc' | 'gms_desc' | 'vaktija_desc'
     // Mobile & Desktop app descriptions
     | 'nightfall_app_desc' | 'rummy_tracker_desc'
+    | 'stickr_app_desc'
     | 'vital_sphere_mobile_desc' | 'vital_sphere_desktop_desc'
     | 'iron_vault_app_desc' | 'iron_vault_admin_desc'
     | 'erent_app_desc'
@@ -83,6 +84,7 @@ export const EN: Record<TranslationKey, string> = {
 
     nightfall_app_desc: 'A werewolf + impostor party game — two classic social deduction games in one app.',
     rummy_tracker_desc: 'Track scores in Rummy card games — add players, keep round scores, and rank session winners.',
+    stickr_app_desc: 'Track sticker album collections and complete sets with ease.',
     vital_sphere_mobile_desc: 'A wellness center management app for browsing products, booking services, and purchasing wellness boxes.',
     vital_sphere_desktop_desc: 'Admin dashboard for managing the VitalSphere wellness center operations, products, and services.',
     iron_vault_app_desc: 'A gym management app for memberships, trainers, workout tracking, and nutritionists.',
@@ -162,6 +164,7 @@ export const BS: Record<TranslationKey, string> = {
 
     nightfall_app_desc: 'Vukodlak + impostor društvene igre — dvije klasične igre dedukcije u jednoj aplikaciji.',
     rummy_tracker_desc: 'Pratite rezultate u kartaškoj igri Rummy — dodajte igrače, bilježite bodove po rundama i rangirajte pobjednike.',
+    stickr_app_desc: 'Pratite kolekcije sličica i kompletirajte albume bez muke.',
     vital_sphere_mobile_desc: 'Aplikacija wellness centra za pregled proizvoda, rezervaciju usluga i kupovinu wellness kutija.',
     vital_sphere_desktop_desc: 'Administrativni panel za upravljanje operacijama, proizvodima i uslugama VitalSphere wellness centra.',
     iron_vault_app_desc: 'Aplikacija za teretanu za clanarine, trenere, pracenje treninga i nutricioniste.',

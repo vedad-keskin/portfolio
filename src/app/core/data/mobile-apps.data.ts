@@ -22,6 +22,16 @@ export const MOBILE_APPS: Project[] = [
         category: 'mobile',
     },
     {
+        id: 'stickr',
+        name: 'Stickr',
+        descriptionKey: 'stickr_app_desc',
+        logoPath: 'assets/stickr.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/stickr-v1.0.1/stickr-v1.0.1.apk',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/stickr-v1.0.1/stickr-v1.0.1.apk',
+        tags: ['Android', 'Flutter', 'Firebase'],
+        category: 'mobile',
+    },
+    {
         id: 'vital-sphere',
         name: 'Vital Sphere',
         descriptionKey: 'vital_sphere_mobile_desc',
