@@ -7,7 +7,7 @@ export const MOBILE_APPS: Project[] = [
         descriptionKey: 'nightfall_app_desc',
         logoPath: 'assets/nightfall.png',
         url: 'https://github.com/vedad-keskin/Nightfall/releases/download/nightfall-v5.0.3/nightfall.v5.0.3.apk',
-            downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/nightfall-v4.5.3/nightfall.v4.5.3.apk',
+            downloadUrl: 'https://github.com/vedad-keskin/Nightfall/releases/download/nightfall-v5.0.3/nightfall.v5.0.3.apk',
         tags: ['Android', 'Flutter', 'Game', 'Firebase', 'Lemon Squeezy'],
         category: 'mobile',
     },
