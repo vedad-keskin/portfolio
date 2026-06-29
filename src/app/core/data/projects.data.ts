@@ -75,7 +75,7 @@ export const WEB_PROJECTS: Project[] = [
         descriptionKey: 'bracket_challenge_desc',
         logoPath: 'assets/bracket-challenge.png',
         url: 'https://wc-bracket-challenge-beta.vercel.app/',
-        tags: ['Angular', 'Vercel', 'i18n'],
+        tags: ['Angular', 'Vercel'],
         category: 'web',
     },
 ];
