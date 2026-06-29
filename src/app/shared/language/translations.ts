@@ -17,7 +17,7 @@ export type TranslationKey =
     | 'wake_reset'
     // Project descriptions
     | 'nightfall_desc' | 'kino_zona_desc' | 'majstor_ba_desc'
-    | 'festify_desc' | 'bookhana_desc' | 'gms_desc' | 'vaktija_desc'
+    | 'festify_desc' | 'bookhana_desc' | 'gms_desc' | 'vaktija_desc' | 'bracket_challenge_desc'
     // Mobile & Desktop app descriptions
     | 'nightfall_app_desc' | 'rummy_tracker_desc'
     | 'stickr_app_desc'
@@ -81,6 +81,7 @@ export const EN: Record<TranslationKey, string> = {
     bookhana_desc: 'An online bookstore for browsing, reviewing, and purchasing books with user accounts and wishlists.',
     gms_desc: 'Platform for managing gym memberships, trainers, nutrition plans, and supplement purchases in one place.',
     vaktija_desc: 'A web app for daily Muslim prayer times in Bosnia and Herzegovina — with city selection and real-time countdown',
+    bracket_challenge_desc: 'Predict knockout bracket outcomes for the FIFA World Cup — fill in your picks from the Round of 32 through to the final.',
 
     nightfall_app_desc: 'A werewolf + impostor party game — two classic social deduction games in one app.',
     rummy_tracker_desc: 'Track scores in Rummy card games — add players, keep round scores, and rank session winners.',
@@ -161,6 +162,7 @@ export const BS: Record<TranslationKey, string> = {
     bookhana_desc: 'Online knjižara za pretraživanje, recenziranje i kupovinu knjiga sa korisničkim računima i listama želja.',
     gms_desc: 'Platforma za upravljanje članarinama u teretani, trenerima, planovima ishrane i kupovinom suplemenata na jednom mjestu.',
     vaktija_desc: 'Web aplikacija za dnevna vremena namaza u Bosni i Hercegovini — s odabirom grada i odbrojavanjem u realnom vremenu.',
+    bracket_challenge_desc: 'Predvidite ishode eliminacijske faze FIFA Svjetskog prvenstva — popunite svoje izbore od osmine finala do finala.',
 
     nightfall_app_desc: 'Vukodlak + impostor društvene igre — dvije klasične igre dedukcije u jednoj aplikaciji.',
     rummy_tracker_desc: 'Pratite rezultate u kartaškoj igri Rummy — dodajte igrače, bilježite bodove po rundama i rangirajte pobjednike.',

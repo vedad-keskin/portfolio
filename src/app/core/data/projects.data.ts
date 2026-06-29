@@ -69,4 +69,13 @@ export const WEB_PROJECTS: Project[] = [
         tags: ['Angular', 'Vercel', 'i18n'],
         category: 'web',
     },
+    {
+        id: 'bracket-challenge',
+        name: 'Bracket Challenge',
+        descriptionKey: 'bracket_challenge_desc',
+        logoPath: 'assets/bracket-challenge.png',
+        url: 'https://wc-bracket-challenge-beta.vercel.app/',
+        tags: ['Angular', 'Vercel', 'i18n'],
+        category: 'web',
+    },
 ];
