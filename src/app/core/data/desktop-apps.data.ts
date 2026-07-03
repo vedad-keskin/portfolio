@@ -107,7 +107,7 @@ export const DESKTOP_APPS: Project[] = [
         logoPath: 'assets/shfc-remastered.png',
         url: 'https://github.com/vedad-keskin/app-releases/releases/download/shfc-remastered/SportsHeadsRemastered-Portable.zip',
         downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/shfc-remastered/SportsHeadsRemastered-Portable.zip',
-        tags: ['Windows', 'Ruffle', 'Game', 'SWF', 'Remaster'],
+        tags: ['Windows', 'Ruffle', 'Game', 'SWF', 'Remaster', "Mod"],
         category: 'desktop',
     },
 ];
