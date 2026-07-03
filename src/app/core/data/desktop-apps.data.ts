@@ -102,7 +102,7 @@ export const DESKTOP_APPS: Project[] = [
     },
     {
         id: 'shfc-remastered',
-        name: 'Sports Heads FC Remastered',
+        name: 'SHFC Remastered',
         descriptionKey: 'shfc_remastered_desc',
         logoPath: 'assets/shfc-remastered.png',
         url: 'https://github.com/vedad-keskin/app-releases/releases/download/shfc-remastered/SportsHeadsRemastered-Portable.zip',

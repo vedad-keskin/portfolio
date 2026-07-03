@@ -104,7 +104,7 @@ export const EN: Record<TranslationKey, string> = {
     calltaxi_app_desc: 'A taxi reservation app for users to book rides, track routes, and estimate arrival times.',
     calltaxi_driver_app_desc: 'A dedicated app for taxi drivers to receive ride requests, manage their status, and navigate to customers.',
     calltaxi_admin_desc: 'A desktop administrative application to manage taxi operations, oversee drivers, and monitor rides.',
-    shfc_remastered_desc: 'A 60 FPS remaster of the classic Sports Heads Football Flash game — play head-to-head soccer with oversized player heads, powered by Ruffle.',
+    shfc_remastered_desc: 'A 60 FPS remaster of the classic Sports Heads Football Flash game — play head-to-head soccer with oversized player heads.',
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
@@ -186,7 +186,7 @@ export const BS: Record<TranslationKey, string> = {
     calltaxi_app_desc: 'Aplikacija za rezervaciju taksija za korisnike za naručivanje vožnji, praćenje ruta i procjenu vremena dolaska.',
     calltaxi_driver_app_desc: 'Namjenska aplikacija za taksiste za primanje zahtjeva za vožnju, upravljanje statusom i navigaciju do klijenata.',
     calltaxi_admin_desc: 'Desktop administrativna aplikacija za upravljanje taksi operacijama, nadzor vozača i praćenje vožnji.',
-    shfc_remastered_desc: '60 FPS remaster klasične Sports Heads Football Flash igre — igrate fudbal glavama u dvoboju, podržano uz Ruffle .',
+    shfc_remastered_desc: '60 FPS remaster klasične Sports Heads Football Flash igre — igrate fudbal glavama u dvoboju.',
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
 
