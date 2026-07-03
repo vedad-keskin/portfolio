@@ -100,4 +100,14 @@ export const DESKTOP_APPS: Project[] = [
         backendUrl: 'https://iron-vault.onrender.com',
         category: 'desktop',
     },
+    {
+        id: 'shfc-remastered',
+        name: 'Sports Heads FC Remastered',
+        descriptionKey: 'shfc_remastered_desc',
+        logoPath: 'assets/shfc-remastered.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/shfc-remastered/SportsHeadsRemastered-Portable.zip',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/shfc-remastered/SportsHeadsRemastered-Portable.zip',
+        tags: ['Windows', 'Ruffle', 'Game', 'SWF', 'Remaster'],
+        category: 'desktop',
+    },
 ];
