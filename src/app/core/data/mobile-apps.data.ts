@@ -141,4 +141,14 @@ export const MOBILE_APPS: Project[] = [
         category: 'mobile',
         backendUrl: 'https://iron-vault.onrender.com',
     },
+    {
+        id: 'quivro-mobile',
+        name: 'Quivro',
+        descriptionKey: 'quivro_app_desc',
+        logoPath: 'assets/quivro.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/quivro.v1.0.0/quivro-v1.0.0.apk',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/quivro.v1.0.0/quivro-v1.0.0.apk',
+        tags: ['Android', 'Flutter', 'Firebase', 'Game', 'Multiplayer'],
+        category: 'mobile',
+    },
 ];

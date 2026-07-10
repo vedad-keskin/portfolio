@@ -78,4 +78,13 @@ export const WEB_PROJECTS: Project[] = [
         tags: ['Angular', 'Vercel'],
         category: 'web',
     },
+    {
+        id: 'quivro',
+        name: 'Quivro',
+        descriptionKey: 'quivro_desc',
+        logoPath: 'assets/quivro.png',
+        url: 'https://quivro.vercel.app/',
+        tags: ['Angular', 'Firebase', 'Vercel', 'Game', 'i18n', 'Multiplayer'],
+        category: 'web',
+    },
 ];
