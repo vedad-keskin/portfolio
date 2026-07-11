@@ -83,7 +83,7 @@ export const EN: Record<TranslationKey, string> = {
     gms_desc: 'Platform for managing gym memberships, trainers, nutrition plans, and supplement purchases in one place.',
     vaktija_desc: 'A web app for daily Muslim prayer times in Bosnia and Herzegovina — with city selection and real-time countdown',
     bracket_challenge_desc: 'Predict knockout bracket outcomes for the FIFA World Cup — fill in your picks from the Round of 32 through to the final.',
-    quivro_desc: 'Kahoot-style TV host app — create quiz rounds from six categories, display questions and a live leaderboard on the big screen, and sync players in real time via Firebase.',
+    quivro_desc: 'A multiplayer quiz host app — create rounds across different categories, display questions and a live leaderboard on the big screen, and run games for players joining from their phones.',
 
     nightfall_app_desc: 'A werewolf + impostor party game — two classic social deduction games in one app.',
     rummy_tracker_desc: 'Track scores in Rummy card games — add players, keep round scores, and rank session winners.',
@@ -106,7 +106,7 @@ export const EN: Record<TranslationKey, string> = {
     calltaxi_driver_app_desc: 'A dedicated app for taxi drivers to receive ride requests, manage their status, and navigate to customers.',
     calltaxi_admin_desc: 'A desktop administrative application to manage taxi operations, oversee drivers, and monitor rides.',
     shfc_remastered_desc: 'A 60 FPS remaster of the classic Sports Heads Football Flash game — play head-to-head soccer with oversized player heads.',
-    quivro_app_desc: 'Flutter player companion — set a nickname and avatar, join a room with a TV code, tap A/B/C/D to answer timed questions, and compete for the top score with rematch support.',
+    quivro_app_desc: 'The player companion app — set a nickname and avatar, join a room with a code, answer timed quiz questions, and compete for the top score.',
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
 
@@ -167,7 +167,7 @@ export const BS: Record<TranslationKey, string> = {
     gms_desc: 'Platforma za upravljanje članarinama u teretani, trenerima, planovima ishrane i kupovinom suplemenata na jednom mjestu.',
     vaktija_desc: 'Web aplikacija za dnevna vremena namaza u Bosni i Hercegovini — s odabirom grada i odbrojavanjem u realnom vremenu.',
     bracket_challenge_desc: 'Predvidite ishode eliminacijske faze FIFA Svjetskog prvenstva — popunite svoje izbore od osmine finala do finala.',
-    quivro_desc: 'Kahoot-stil TV host aplikacija — kreirajte kviz runde iz šest kategorija, prikazujte pitanja i live rang listu na velikom ekranu, uz sinhronizaciju igrača u realnom vremenu preko Firebase-a.',
+    quivro_desc: 'Multiplayer kviz host aplikacija — kreirajte runde iz različitih kategorija, prikazujte pitanja i live rang listu na velikom ekranu i vodite igre za igrače koji se pridružuju sa telefona.',
 
     nightfall_app_desc: 'Vukodlak + impostor društvene igre — dvije klasične igre dedukcije u jednoj aplikaciji.',
     rummy_tracker_desc: 'Pratite rezultate u kartaškoj igri Rummy — dodajte igrače, bilježite bodove po rundama i rangirajte pobjednike.',
@@ -190,7 +190,7 @@ export const BS: Record<TranslationKey, string> = {
     calltaxi_driver_app_desc: 'Namjenska aplikacija za taksiste za primanje zahtjeva za vožnju, upravljanje statusom i navigaciju do klijenata.',
     calltaxi_admin_desc: 'Desktop administrativna aplikacija za upravljanje taksi operacijama, nadzor vozača i praćenje vožnji.',
     shfc_remastered_desc: '60 FPS remaster klasične Sports Heads Football Flash igre — igrate fudbal glavama u dvoboju.',
-    quivro_app_desc: 'Flutter aplikacija za igrače — postavite nadimak i avatar, pridružite se sobi pomoću TV koda, odgovarajte na pitanja dodirom A/B/C/D i takmičite se za najbolji rezultat uz podršku za revanš.',
+    quivro_app_desc: 'Aplikacija za igrače — postavite nadimak i avatar, pridružite se sobi pomoću koda, odgovarajte na kviz pitanja s vremenskim ograničenjem i takmičite se za najbolji rezultat.',
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
 

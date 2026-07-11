@@ -12,6 +12,16 @@ export const MOBILE_APPS: Project[] = [
         category: 'mobile',
     },
     {
+        id: 'quivro-mobile',
+        name: 'Quivro',
+        descriptionKey: 'quivro_app_desc',
+        logoPath: 'assets/quivro.png',
+        url: 'https://github.com/vedad-keskin/app-releases/releases/download/quivro.v1.0.0/quivro-v1.0.0.apk',
+        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/quivro.v1.0.0/quivro-v1.0.0.apk',
+        tags: ['Android', 'Flutter', 'Firebase', 'Game', 'Multiplayer'],
+        category: 'mobile',
+    },
+    {
         id: 'rummy-tracker',
         name: 'Rummy Tracker',
         descriptionKey: 'rummy_tracker_desc',
@@ -140,15 +150,5 @@ export const MOBILE_APPS: Project[] = [
         tags: ['Android', 'Flutter', 'RabbitMQ', '.NET', 'PostgreSQL', 'Render'],
         category: 'mobile',
         backendUrl: 'https://iron-vault.onrender.com',
-    },
-    {
-        id: 'quivro-mobile',
-        name: 'Quivro',
-        descriptionKey: 'quivro_app_desc',
-        logoPath: 'assets/quivro.png',
-        url: 'https://github.com/vedad-keskin/app-releases/releases/download/quivro.v1.0.0/quivro-v1.0.0.apk',
-        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/quivro.v1.0.0/quivro-v1.0.0.apk',
-        tags: ['Android', 'Flutter', 'Firebase', 'Game', 'Multiplayer'],
-        category: 'mobile',
     },
 ];

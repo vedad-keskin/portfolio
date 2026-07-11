@@ -11,6 +11,15 @@ export const WEB_PROJECTS: Project[] = [
         category: 'web',
     },
     {
+        id: 'quivro',
+        name: 'Quivro',
+        descriptionKey: 'quivro_desc',
+        logoPath: 'assets/quivro.png',
+        url: 'https://quivro.vercel.app/',
+        tags: ['Angular', 'Firebase', 'Vercel', 'Game', 'i18n', 'Multiplayer'],
+        category: 'web',
+    },
+    {
         id: 'kino-zona',
         name: 'Kino Zona',
         descriptionKey: 'kino_zona_desc',
@@ -76,15 +85,6 @@ export const WEB_PROJECTS: Project[] = [
         logoPath: 'assets/bracket-challenge.png',
         url: 'https://wc-bracket-challenge-beta.vercel.app/',
         tags: ['Angular', 'Vercel'],
-        category: 'web',
-    },
-    {
-        id: 'quivro',
-        name: 'Quivro',
-        descriptionKey: 'quivro_desc',
-        logoPath: 'assets/quivro.png',
-        url: 'https://quivro.vercel.app/',
-        tags: ['Angular', 'Firebase', 'Vercel', 'Game', 'i18n', 'Multiplayer'],
         category: 'web',
     },
 ];
