@@ -17,7 +17,7 @@ export type TranslationKey =
     | 'wake_reset'
     // Project descriptions
     | 'nightfall_desc' | 'kino_zona_desc' | 'majstor_ba_desc'
-    | 'festify_desc' | 'bookhana_desc' | 'gms_desc' | 'vaktija_desc' | 'bracket_challenge_desc' | 'quivro_desc'
+    | 'festify_desc' | 'bookhana_desc' | 'gms_desc' | 'vaktija_desc' | 'bracket_challenge_desc' | 'quivro_desc' | 'viking_desc'
     // Mobile & Desktop app descriptions
     | 'nightfall_app_desc' | 'rummy_tracker_desc'
     | 'stickr_app_desc'
@@ -84,6 +84,7 @@ export const EN: Record<TranslationKey, string> = {
     vaktija_desc: 'A web app for daily Muslim prayer times in Bosnia and Herzegovina — with city selection and real-time countdown',
     bracket_challenge_desc: 'Predict knockout bracket outcomes for the FIFA World Cup — fill in your picks from the Round of 32 through to the final.',
     quivro_desc: 'Host live multiplayer quizzes with customizable categories and real-time leaderboards.',
+    viking_desc: 'Auto service website in Jablanica offering tire services, car washing, and auto AC refilling.',
 
     nightfall_app_desc: 'A werewolf + impostor party game — two classic social deduction games in one app.',
     rummy_tracker_desc: 'Track scores in Rummy card games — add players, keep round scores, and rank session winners.',
@@ -169,6 +170,7 @@ export const BS: Record<TranslationKey, string> = {
     vaktija_desc: 'Web aplikacija za dnevna vremena namaza u Bosni i Hercegovini — s odabirom grada i odbrojavanjem u realnom vremenu.',
     bracket_challenge_desc: 'Predvidite ishode eliminacijske faze FIFA Svjetskog prvenstva — popunite svoje izbore od osmine finala do finala.',
     quivro_desc: 'Kreirajte i vodite multiplayer kvizove uz pitanja uživo i rang liste u stvarnom vremenu.',
+    viking_desc: 'Web stranica za auto servis u Jablanici — vulkanizerske usluge, pranje auta i punjenje auto klima.',
 
     nightfall_app_desc: 'Vukodlak + impostor društvene igre — dvije klasične igre dedukcije u jednoj aplikaciji.',
     rummy_tracker_desc: 'Pratite rezultate u kartaškoj igri Rummy — dodajte igrače, bilježite bodove po rundama i rangirajte pobjednike.',

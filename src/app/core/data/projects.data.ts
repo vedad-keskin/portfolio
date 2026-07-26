@@ -87,4 +87,13 @@ export const WEB_PROJECTS: Project[] = [
         tags: ['Angular', 'Vercel'],
         category: 'web',
     },
+    {
+        id: 'viking',
+        name: 'Viking',
+        descriptionKey: 'viking_desc',
+        logoPath: 'assets/viking.png',
+        url: 'https://vo-viking.vercel.app/',
+        tags: ['Angular', 'Vercel', 'i18n'],
+        category: 'web',
+    },
 ];
