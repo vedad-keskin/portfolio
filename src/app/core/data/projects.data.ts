@@ -96,6 +96,13 @@ export const WEB_PROJECTS: Project[] = [
         category: 'web',
         backendUrl: 'https://gym-management-system-gdin.onrender.com',
     },
-
-
+    {
+        id: 'engineering-tools',
+        name: 'Engineering Tools',
+        descriptionKey: 'engineering_tools_desc',
+        logoPath: 'assets/engineering-tools.png',
+        url: 'https://engineering-kit.vercel.app/',
+        tags: ['Angular', 'Vercel', 'i18n', 'PWA'],
+        category: 'web',
+    },
 ];

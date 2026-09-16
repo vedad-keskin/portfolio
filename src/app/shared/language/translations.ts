@@ -17,7 +17,7 @@ export type TranslationKey =
     | 'wake_reset'
     // Project descriptions
     | 'nightfall_desc' | 'kino_zona_desc' | 'majstor_ba_desc'
-    | 'festify_desc' | 'bookhana_desc' | 'gms_desc' | 'vaktija_desc' | 'bracket_challenge_desc' | 'quivro_desc' | 'viking_desc'
+    | 'festify_desc' | 'bookhana_desc' | 'gms_desc' | 'vaktija_desc' | 'bracket_challenge_desc' | 'quivro_desc' | 'viking_desc' | 'engineering_tools_desc'
     // Mobile & Desktop app descriptions
     | 'nightfall_app_desc' | 'rummy_tracker_desc'
     | 'stickr_app_desc'
@@ -85,6 +85,7 @@ export const EN: Record<TranslationKey, string> = {
     bracket_challenge_desc: 'Predict knockout bracket outcomes for the FIFA World Cup — fill in your picks from the Round of 32 through to the final.',
     quivro_desc: 'Host live multiplayer quizzes with customizable categories and real-time leaderboards.',
     viking_desc: 'Auto service website in Jablanica offering tire services, car washing, and auto AC refilling.',
+    engineering_tools_desc: 'A LV electrical design toolkit — cable sizing, power network planning, and lightning risk assessment.',
 
     nightfall_app_desc: 'A werewolf + impostor party game — two classic social deduction games in one app.',
     rummy_tracker_desc: 'Track scores in Rummy card games — add players, keep round scores, and rank session winners.',
@@ -171,6 +172,7 @@ export const BS: Record<TranslationKey, string> = {
     bracket_challenge_desc: 'Predvidite ishode eliminacijske faze FIFA Svjetskog prvenstva — popunite svoje izbore od osmine finala do finala.',
     quivro_desc: 'Kreirajte i vodite multiplayer kvizove uz pitanja uživo i rang liste u stvarnom vremenu.',
     viking_desc: 'Web stranica za auto servis u Jablanici — vulkanizerske usluge, pranje auta i punjenje auto klima.',
+    engineering_tools_desc: 'Alati za LV elektroprojektovanje — dimenzionisanje kablova, planiranje napajanja i procjena rizika od udara groma.',
 
     nightfall_app_desc: 'Vukodlak + impostor društvene igre — dvije klasične igre dedukcije u jednoj aplikaciji.',
     rummy_tracker_desc: 'Pratite rezultate u kartaškoj igri Rummy — dodajte igrače, bilježite bodove po rundama i rangirajte pobjednike.',
