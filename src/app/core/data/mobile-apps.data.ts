@@ -8,7 +8,7 @@ export const MOBILE_APPS: Project[] = [
         logoPath: 'assets/nightfall.png',
         url: 'https://play.google.com/store/apps/details?id=com.nightfall.app',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nightfall.app',
-        tags: ['Android', 'Flutter', 'Game', 'Firebase', 'Lemon Squeezy'],
+        tags: ['Android', 'Flutter', 'Game', 'Firebase', 'Lemon Squeezy', 'Google Play'],
         category: 'mobile',
     },
     {

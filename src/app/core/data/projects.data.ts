@@ -38,6 +38,15 @@ export const WEB_PROJECTS: Project[] = [
         category: 'web',
     },
     {
+        id: 'engineering-tools',
+        name: 'Engineering Tools',
+        descriptionKey: 'engineering_tools_desc',
+        logoPath: 'assets/engineering-tools.png',
+        url: 'https://engineering-kit.vercel.app/',
+        tags: ['Angular', 'Vercel', 'i18n', 'PWA'],
+        category: 'web',
+    },
+    {
         id: 'bracket-challenge',
         name: 'Bracket Challenge',
         descriptionKey: 'bracket_challenge_desc',
@@ -95,14 +104,5 @@ export const WEB_PROJECTS: Project[] = [
         tags: ['Angular', '.NET', 'Vercel', 'Render', 'PostgreSQL', 'Docker', 'Supabase', 'Twilio'],
         category: 'web',
         backendUrl: 'https://gym-management-system-gdin.onrender.com',
-    },
-    {
-        id: 'engineering-tools',
-        name: 'Engineering Tools',
-        descriptionKey: 'engineering_tools_desc',
-        logoPath: 'assets/engineering-tools.png',
-        url: 'https://engineering-kit.vercel.app/',
-        tags: ['Angular', 'Vercel', 'i18n', 'PWA'],
-        category: 'web',
     },
 ];
