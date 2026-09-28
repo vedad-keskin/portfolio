@@ -31,7 +31,7 @@ export type TranslationKey =
     | 'calltaxi_app_desc' | 'calltaxi_driver_app_desc' | 'calltaxi_admin_desc'
     | 'shfc_remastered_desc' | 'quivro_app_desc'
     // Download
-    | 'download_btn_apk' | 'download_btn_exe'
+    | 'download_btn_apk' | 'download_btn_exe' | 'play_store_btn'
     // Detail page
     | 'detail_back' | 'detail_visit' | 'detail_download'
     | 'detail_tech' | 'detail_category' | 'detail_backend'
@@ -112,6 +112,7 @@ export const EN: Record<TranslationKey, string> = {
     
     download_btn_apk: 'DOWNLOAD APK',
     download_btn_exe: 'DOWNLOAD EXE',
+    play_store_btn: 'GOOGLE PLAY',
 
     detail_back: 'BACK',
     detail_visit: 'VISIT LIVE SITE →',
@@ -199,6 +200,7 @@ export const BS: Record<TranslationKey, string> = {
     
     download_btn_apk: 'PREUZMI APK',
     download_btn_exe: 'PREUZMI EXE',
+    play_store_btn: 'GOOGLE PLAY',
 
     detail_back: 'NAZAD',
     detail_visit: 'POSJETI STRANICU →',

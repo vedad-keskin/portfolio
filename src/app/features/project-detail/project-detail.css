@@ -291,13 +291,19 @@
 /* ===== Primary action ===== */
 
 .detail__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     width: 100%;
     margin-top: 8px;
     margin-bottom: 48px;
 }
 
 .detail__action-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     width: 100%;
     text-align: center;
     font-family: var(--font-pixel);
@@ -311,6 +317,34 @@
     position: relative;
     overflow: hidden;
     -webkit-tap-highlight-color: transparent;
+}
+
+.detail__action-btn--play {
+    background: rgba(13, 27, 42, 0.9);
+    color: var(--text);
+    border: 2px solid var(--frame);
+}
+
+.detail__action-btn--play:hover {
+    border-color: var(--accent-amber);
+    box-shadow: 0 0 28px rgba(255, 215, 64, 0.25), 0 4px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.detail__play-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+@media (min-width: 600px) {
+    .detail__actions {
+        flex-direction: row;
+    }
+
+    .detail__action-btn {
+        flex: 1;
+    }
 }
 
 /* action button — background + hover per category */

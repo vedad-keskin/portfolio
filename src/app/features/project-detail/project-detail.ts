@@ -40,15 +40,18 @@ export class ProjectDetailComponent implements OnInit {
         return `detail__category--${this.project()?.category ?? 'web'}`;
     }
 
-    get actionUrl(): string {
-        const p = this.project();
-        return p?.downloadUrl ?? p?.url ?? '';
+    get downloadUrl(): string {
+        return this.project()?.downloadUrl ?? '';
     }
 
-    get actionLabel(): string {
+    get visitUrl(): string {
         const p = this.project();
-        if (!p?.downloadUrl) return this.ls.t('visit_btn');
-        if (p.category === 'desktop') return this.ls.t('download_btn_exe');
+        if (!p || p.downloadUrl || p.playStoreUrl) return '';
+        return p.url;
+    }
+
+    get downloadLabel(): string {
+        if (this.project()?.category === 'desktop') return this.ls.t('download_btn_exe');
         return this.ls.t('download_btn_apk');
     }
 

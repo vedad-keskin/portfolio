@@ -54,11 +54,23 @@
     </div>
     }
 
-    <!-- Primary action -->
+    <!-- Primary actions -->
     <div class="detail__actions">
-        <a class="detail__action-btn" [ngClass]="categoryClass" [href]="actionUrl" target="_blank" rel="noopener noreferrer">
-            {{ actionLabel }}
+        @if (p.playStoreUrl) {
+        <a class="detail__action-btn detail__action-btn--play" [href]="p.playStoreUrl" target="_blank" rel="noopener noreferrer">
+            <img src="g_play.png" alt="" class="detail__play-icon" />
+            {{ ls.t('play_store_btn') }}
         </a>
+        }
+        @if (downloadUrl) {
+        <a class="detail__action-btn" [ngClass]="categoryClass" [href]="downloadUrl" target="_blank" rel="noopener noreferrer">
+            {{ downloadLabel }}
+        </a>
+        } @else if (visitUrl) {
+        <a class="detail__action-btn" [ngClass]="categoryClass" [href]="visitUrl" target="_blank" rel="noopener noreferrer">
+            {{ ls.t('visit_btn') }}
+        </a>
+        }
     </div>
 
     <!-- Footer -->

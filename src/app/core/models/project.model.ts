@@ -10,4 +10,5 @@ export interface Project {
     category: 'web' | 'mobile' | 'desktop';
     backendUrl?: string;
     downloadUrl?: string;
+    playStoreUrl?: string;
 }

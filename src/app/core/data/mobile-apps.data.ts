@@ -3,11 +3,11 @@ import { Project } from '../models/project.model';
 export const MOBILE_APPS: Project[] = [
     {
         id: 'nightfall-app',
-        name: 'Nightfall',
+        name: 'Nightfall: Werewolves',
         descriptionKey: 'nightfall_app_desc',
         logoPath: 'assets/nightfall.png',
-        url: 'https://github.com/vedad-keskin/app-releases/releases/download/nightfall-v5.1.2/nightfall.v5.1.2.apk',
-            downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/nightfall-v5.1.2/nightfall.v5.1.2.apk',
+        url: 'https://play.google.com/store/apps/details?id=com.nightfall.app',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.nightfall.app',
         tags: ['Android', 'Flutter', 'Game', 'Firebase', 'Lemon Squeezy'],
         category: 'mobile',
     },
