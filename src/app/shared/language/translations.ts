@@ -33,7 +33,7 @@ export type TranslationKey =
     // Download
     | 'download_btn_apk' | 'download_btn_exe' | 'play_store_btn'
     // Detail page
-    | 'detail_back' | 'detail_visit' | 'detail_download'
+    | 'detail_back' | 'detail_visit' | 'detail_visit_alternate' | 'detail_download'
     | 'detail_tech' | 'detail_category' | 'detail_backend'
     | 'detail_wake_backend' | 'detail_not_found' | 'detail_not_found_sub'
     // Footer
@@ -116,6 +116,7 @@ export const EN: Record<TranslationKey, string> = {
 
     detail_back: 'BACK',
     detail_visit: 'VISIT LIVE SITE →',
+    detail_visit_alternate: 'VISIT ALTERNATE',
     detail_download: 'DOWNLOAD →',
     detail_tech: 'TECH STACK',
     detail_category: 'CATEGORY',
@@ -204,6 +205,7 @@ export const BS: Record<TranslationKey, string> = {
 
     detail_back: 'NAZAD',
     detail_visit: 'POSJETI STRANICU →',
+    detail_visit_alternate: 'POSJETI ALTERNATIVU',
     detail_download: 'PREUZMI →',
     detail_tech: 'TEHNOLOGIJE',
     detail_category: 'KATEGORIJA',

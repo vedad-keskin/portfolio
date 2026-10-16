@@ -6,6 +6,7 @@ export interface Project {
     descriptionKey: TranslationKey;
     logoPath: string;
     url: string;
+    alternateUrl?: string;
     tags: string[];
     category: 'web' | 'mobile' | 'desktop';
     backendUrl?: string;

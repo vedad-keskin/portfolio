@@ -71,6 +71,11 @@
             {{ ls.t('visit_btn') }}
         </a>
         }
+        @if (p.category === 'web' && p.alternateUrl) {
+        <a class="detail__action-btn" [ngClass]="categoryClass" [href]="p.alternateUrl" target="_blank" rel="noopener noreferrer">
+            {{ ls.t('detail_visit_alternate') }}
+        </a>
+        }
     </div>
 
     <!-- Footer -->
