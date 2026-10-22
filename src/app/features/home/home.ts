@@ -8,6 +8,7 @@ import { LanguageService } from '../../shared/language/language.service';
 import { WEB_PROJECTS } from '../../core/data/projects.data';
 import { MOBILE_APPS } from '../../core/data/mobile-apps.data';
 import { DESKTOP_APPS } from '../../core/data/desktop-apps.data';
+import { BackendWakeService } from '../../core/services/backend-wake.service';
 
 @Component({
     selector: 'app-home',
@@ -24,8 +25,13 @@ import { DESKTOP_APPS } from '../../core/data/desktop-apps.data';
 })
 export class HomeComponent {
     readonly ls = inject(LanguageService);
+    private readonly wake = inject(BackendWakeService);
     readonly techStack = [...new Set([...WEB_PROJECTS, ...MOBILE_APPS, ...DESKTOP_APPS].flatMap(p => p.tags))];
     readonly projectCount = WEB_PROJECTS.length + MOBILE_APPS.length + DESKTOP_APPS.length;
+
+    constructor() {
+        this.wake.prewarmAll();
+    }
 
     scrollTo(id: string): void {
         const el = document.getElementById(id);

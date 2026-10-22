@@ -52,6 +52,15 @@ export class BackendWakeService {
         this.backends().forEach((_, i) => this.wakeOne(i));
     }
 
+    prewarmAll(): void {
+        this.backends().forEach(({ url }) => {
+            this.http.get(url, { responseType: 'text' }).subscribe({
+                // A CORS error can follow a successful wake request.
+                error: () => {},
+            });
+        });
+    }
+
     wakeOne(index: number): void {
         const current = this.backends();
         if (current[index].status === 'awake' || current[index].status === 'waking') return;
