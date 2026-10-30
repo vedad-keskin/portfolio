@@ -16,9 +16,9 @@ export const MOBILE_APPS: Project[] = [
         name: 'Quivro',
         descriptionKey: 'quivro_app_desc',
         logoPath: 'assets/quivro.webp',
-        url: 'https://github.com/vedad-keskin/app-releases/releases/download/quivro.v1.0.1/quivro_v1.0.1.apk',
-        downloadUrl: 'https://github.com/vedad-keskin/app-releases/releases/download/quivro.v1.0.1/quivro_v1.0.1.apk',
-        tags: ['Android', 'Flutter', 'Firebase', 'Game', 'Multiplayer'],
+        url: 'https://play.google.com/store/apps/details?id=com.quivro.app',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.quivro.app',
+        tags: ['Android', 'Flutter', 'Firebase', 'Game', 'Multiplayer', 'Google Play'],
         category: 'mobile',
     },
     {
